@@ -1,0 +1,93 @@
+/* 
+   Floating Action Buttons - Dr Pradeep Clinic 
+   - WhatsApp, Call, and Scroll-to-Top
+*/
+
+.floating-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 99999;
+    pointer-events: none;
+}
+
+.floating-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: auto;
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+
+/* Specific Button Styles */
+.btn-whatsapp {
+    background-color: #25D366; 
+}
+
+.btn-call {
+    background-color: #005ea1; 
+}
+
+.btn-scroll-top {
+    background-color: #002443; 
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+.btn-scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Icons styling */
+.floating-btn .material-symbols-outlined {
+    font-size: 26px;
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Premium Hover Effects */
+.floating-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* WhatsApp Pulse Animation */
+@keyframes pulse-whatsapp {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.btn-whatsapp {
+    animation: pulse-whatsapp 2s infinite;
+}
+
+/* Responsive Optimizations */
+@media (max-width: 640px) {
+    .floating-container {
+        bottom: 16px;
+        right: 16px;
+        gap: 12px;
+    }
+    .floating-btn {
+        width: 48px;
+        height: 48px;
+    }
+    .floating-btn .material-symbols-outlined {
+        font-size: 24px;
+    }
+}

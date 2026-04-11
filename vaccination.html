@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Vaccination Services | Dr. Pradeep Children's Clinic</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="floating-buttons.css"/>
+    <link rel="stylesheet" href="global.css"/>
+    <script src="scroll-reveal.js" defer></script>
+    <script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                colors: {
+                  "clinic-navy": "#1A1A1A",
+                  "primary": "#1E88E5",
+                  "accent": "#EC407A",
+                  "soft-blue-bg": "#E3F2FD",
+                  "soft-pink-bg": "#FCE4EC",
+                  "neutral-white": "#FFFFFF",
+                  "primary-blue": "#1E88E5",
+                  "accent-pink": "#EC407A"
+                },
+                fontFamily: {
+                  "headline": ["Playfair Display", "serif"],
+                  "body": ["Plus Jakarta Sans", "sans-serif"]
+                },
+                borderRadius: {
+                  "premium": "24px",
+                  "standard": "16px"
+                },
+                boxShadow: {
+                  "premium": "0 20px 40px -12px rgba(30, 136, 229, 0.15)",
+                  "hospital": "0 32px 64px -12px rgba(0, 0, 0, 0.14)"
+                },
+                backgroundImage: {
+                  "hero-gradient": "linear-gradient(135deg, rgba(30, 136, 229, 0.95) 0%, rgba(236, 64, 122, 0.9) 100%)",
+                  "soft-blue-gradient": "linear-gradient(180deg, #FFFFFF 0%, #E3F2FD 100%)",
+                  "soft-pink-gradient": "linear-gradient(180deg, #FFFFFF 0%, #FCE4EC 100%)"
+                }
+              },
+            },
+          }
+    </script>
+</head>
+<body class="font-body text-slate-900 bg-white selection:bg-primary-blue/10 transition-colors duration-500">
+
+    <!-- Header / Navbar -->
+    <nav id="navbar" class="fixed top-4 inset-x-2 md:inset-x-8 z-50 flex items-center justify-between max-w-7xl mx-auto rounded-[2rem] px-4 md:px-6 py-2.5 md:py-3 premium-nav transition-all duration-300">
+        <a href="index.html" class="flex items-center gap-2 md:gap-3 group shrink-0">
+            <div class="w-10 h-10 md:w-12 md:h-12 bg-white rounded-xl md:rounded-2xl flex items-center justify-center shadow-premium rotate-[-3deg] group-hover:rotate-0 transition-transform duration-500 overflow-hidden shrink-0">
+                <img src="clinic-mascot-logo.jpg" alt="Logo" class="h-8 w-8 md:h-10 md:w-10 object-contain">
+            </div>
+            <div class="flex flex-col">
+                <span class="text-lg md:text-2xl font-bold font-headline tracking-tighter text-clinic-navy block leading-none">Dr. Pradeep</span>
+                <span class="text-[8px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold text-primary/80">Children's Clinic</span>
+            </div>
+        </a>
+        
+        <div class="hidden lg:flex items-center gap-6 font-medium text-sm">
+            <a href="index.html" class="nav-link text-slate-600 hover:text-primary transition-colors">Home</a>
+            <a href="about.html" class="nav-link text-slate-600 hover:text-primary transition-colors">About</a>
+            
+            <!-- Services Dropdown -->
+            <div class="relative group">
+                <button class="nav-link active text-primary font-bold border-bottom-2 border-primary transition-colors flex items-center gap-1 py-4">
+                    Services
+                    <span class="material-symbols-outlined text-sm duration-300 group-hover:rotate-180">expand_more</span>
+                </button>
+                <div class="absolute top-full left-0 w-72 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50 p-2">
+                    <a href="child-healthcare.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-600 hover:text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-blue-100/50 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-white transition-colors">
+                            <span class="material-symbols-outlined text-xl">medical_services</span>
+                        </div>
+                        <span class="text-sm font-semibold">Child Healthcare</span>
+                    </a>
+                    <a href="vaccination.html" class="flex items-center gap-3 p-3 rounded-xl bg-blue-50 text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center shadow-sm">
+                            <span class="material-symbols-outlined text-xl">vaccines</span>
+                        </div>
+                        <span class="text-sm font-bold">Vaccination</span>
+                    </a>
+                    <a href="newborn-care.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-600 hover:text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-blue-100/50 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-white transition-colors">
+                            <span class="material-symbols-outlined text-xl">child_care</span>
+                        </div>
+                        <span class="text-sm font-semibold">Newborn Care</span>
+                    </a>
+                    <a href="growth-monitoring.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-600 hover:text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-blue-100/50 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-white transition-colors">
+                            <span class="material-symbols-outlined text-xl">monitoring</span>
+                        </div>
+                        <span class="text-sm font-semibold">Growth Monitoring</span>
+                    </a>
+                    <a href="subspecialty-care.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-600 hover:text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-blue-100/50 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-white transition-colors">
+                            <span class="material-symbols-outlined text-xl">health_metrics</span>
+                        </div>
+                        <span class="text-sm font-semibold">Subspecialty Care</span>
+                    </a>
+                    <a href="parental-guidance.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-600 hover:text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-blue-100/50 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-white transition-colors">
+                            <span class="material-symbols-outlined text-xl">family_restroom</span>
+                        </div>
+                        <span class="text-sm font-semibold">Parental Guidance</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="gallery.html" class="nav-link text-slate-600 hover:text-primary transition-colors">Gallery</a>
+            <a href="contact.html" class="nav-link text-slate-600 hover:text-primary transition-colors">Contact</a>
+        </div>
+
+        <div class="flex items-center gap-2 md:gap-3">
+            <a href="contact.html" class="bg-primary text-white !px-3 !py-2 md:!px-5 md:!py-2.5 !text-[10px] md:!text-sm rounded-full font-bold hover:bg-clinic-navy duration-200 transition-all shadow-md shrink-0">
+                Book Now
+            </a>
+            <button class="lg:hidden p-1.5 text-primary" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 mt-2 p-6 bg-white rounded-2xl shadow-2xl border border-slate-100 flex flex-col gap-4 lg:hidden">
+            <a href="index.html" class="text-slate-600 font-semibold">Home</a>
+            <a href="about.html" class="text-slate-600 font-semibold">About</a>
+            <button class="flex items-center justify-between text-primary font-bold w-full" onclick="document.getElementById('mobile-services').classList.toggle('hidden')">
+                Services <span class="material-symbols-outlined">expand_more</span>
+            </button>
+            <div id="mobile-services" class="hidden flex flex-col gap-3 pl-4 border-l-2 border-primary/20">
+                <a href="newborn-care.html" class="text-slate-600 font-medium">Newborn Care</a>
+                <a href="child-healthcare.html" class="text-slate-600 font-medium">Child Healthcare</a>
+                <a href="vaccination.html" class="font-bold text-primary">Vaccination</a>
+                <a href="growth-monitoring.html" class="text-slate-600 font-medium">Growth Monitoring</a>
+                <a href="subspecialty-care.html" class="text-slate-600 font-medium">Subspecialty Care</a>
+                <a href="parental-guidance.html" class="text-slate-600 font-medium">Parental Guidance</a>
+            </div>
+            <a href="gallery.html" class="text-slate-600 font-semibold">Gallery</a>
+            <a href="contact.html" class="text-slate-600 font-semibold">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Full-width Hero Banner -->
+        <header class="relative h-[60vh] min-h-[400px] flex items-center overflow-hidden pt-20 pediatric-theme-container">
+            <!-- Floating Clouds -->
+            <div class="pediatric-cloud w-64 h-32 top-10 -left-10 animate-drift"></div>
+            <div class="pediatric-cloud w-72 h-36 bottom-20 -right-10 animate-drift-slow opacity-40"></div>
+            
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[3s] hover:scale-110" style="background-image: url('assets/vaccination-hero.png');"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-clinic-navy/90 via-clinic-navy/60 to-transparent"></div>
+            
+            <!-- Rainbow Accent -->
+            <div class="rainbow-accent bottom-10 left-10 opacity-20"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
+                <div class="max-w-2xl">
+                    <div class="inline-flex items-center gap-3 bg-primary-blue/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 mb-6">
+                        <span class="material-symbols-outlined text-white text-sm">vaccines</span>
+                        <span class="text-[10px] font-bold text-white uppercase tracking-[0.2em]">Vaccination Excellence</span>
+                    </div>
+                    <h1 class="text-white text-5xl md:text-7xl font-bold font-headline mb-6 leading-tight">
+                        Vaccination <br><span class="text-primary-blue">Services</span>
+                    </h1>
+                    <p class="text-white/80 text-xl font-medium leading-relaxed mb-8">
+                        Safe, scheduled, and personalized vaccination for children of all ages. Protecting your child from preventable illnesses with expert clinical guidance.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Why Choose Our Care Section (Sky Theme Modernized) -->
+        <section class="py-24 px-6 relative overflow-hidden sky-theme-section">
+            <!-- Animated Background Elements -->
+            <div class="floating-cloud w-64 h-32 top-10 left-12 animate-sky-drift opacity-60"></div>
+            <div class="floating-cloud w-96 h-48 -bottom-12 -right-12 animate-sky-drift-slow opacity-40"></div>
+            <div class="floating-cloud w-72 h-36 top-1/2 -left-16 animate-sky-drift-reverse opacity-30"></div>
+            
+            <!-- Sparkles -->
+            <div class="sparkle-particle top-24 right-1/4"></div>
+            <div class="sparkle-particle bottom-32 left-1/3" style="animation-delay: 1.5s;"></div>
+            <div class="sparkle-particle top-1/2 right-12" style="animation-delay: 3s;"></div>
+
+            <div class="max-w-7xl mx-auto relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                    <!-- Left: Existing Text Content -->
+                    <div class="space-y-8">
+                        <div class="inline-block p-3 px-6 bg-white/50 backdrop-blur-sm rounded-2xl border-l-4 border-primary-blue shadow-sm">
+                             <h2 class="text-3xl font-bold text-clinic-navy font-headline">Protection for Life</h2>
+                        </div>
+                        <div class="space-y-6 text-lg text-slate-600 leading-relaxed font-medium">
+                            <p>At Dr. Pradeep's Clinic, we provide complete vaccination schedules for infants, children, and adolescents. Our services include mandatory vaccines as per national protocols, as well as optional and travel-specific vaccines for specialized protection.</p>
+                            <p>We pride ourselves on our safe vaccination practices and parent-friendly counseling, ensuring you have all the information regarding vaccine safety and the long-term importance of vaccination.</p>
+                            <p>Our facility maintains a strict 100% cold chain integrity for all vaccine stocks, ensuring maximum potency and administration safety for your child's health.</p>
+                        </div>
+                        <div class="pt-6">
+                            <a href="contact.html" class="inline-flex items-center gap-2 bg-primary-blue text-white px-8 py-4 rounded-[1.2rem] font-bold text-sm uppercase tracking-widest hover:bg-clinic-navy transition-all duration-300 shadow-xl shadow-blue-200 group">
+                                Enquire Now
+                                <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Modernized Benefit Card -->
+                    <div class="lg:pl-10 relative">
+                        <div class="relative group">
+                            <!-- Rainbow Glow Effect -->
+                            <div class="rainbow-halo"></div>
+                            
+                            <div class="sky-card-glass p-10 md:p-14 relative overflow-hidden">
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-primary-blue/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                                
+                                <h3 class="font-headline text-3xl font-bold mb-10 text-primary-blue flex items-center gap-3">
+                                    Why Choose Our Care?
+                                    <span class="material-symbols-outlined animate-pulse">auto_awesome</span>
+                                </h3>
+                                
+                                <ul class="space-y-6">
+                                    <li class="flex items-start gap-5 group/item">
+                                        <div class="mt-1 w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue shrink-0 group-hover/item:bg-primary-blue group-hover/item:text-white transition-all duration-300">
+                                            <span class="material-symbols-outlined text-sm font-bold">check</span>
+                                        </div>
+                                        <p class="text-slate-600 font-bold text-lg leading-tight group-hover/item:text-primary-blue transition-colors">100% Cold Chain Potency Integrity</p>
+                                    </li>
+                                    <li class="flex items-start gap-5 group/item">
+                                        <div class="mt-1 w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue shrink-0 group-hover/item:bg-primary-blue group-hover/item:text-white transition-all duration-300">
+                                            <span class="material-symbols-outlined text-sm font-bold">check</span>
+                                        </div>
+                                        <p class="text-slate-600 font-bold text-lg leading-tight group-hover/item:text-primary-blue transition-colors">Authenticated & Verified Vaccine Stocks</p>
+                                    </li>
+                                    <li class="flex items-start gap-5 group/item">
+                                        <div class="mt-1 w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue shrink-0 group-hover/item:bg-primary-blue group-hover/item:text-white transition-all duration-300">
+                                            <span class="material-symbols-outlined text-sm font-bold">check</span>
+                                        </div>
+                                        <p class="text-slate-600 font-bold text-lg leading-tight group-hover/item:text-primary-blue transition-colors">Painless Minimal-Discomfort Experience</p>
+                                    </li>
+                                    <li class="flex items-start gap-5 group/item">
+                                        <div class="mt-1 w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue shrink-0 group-hover/item:bg-primary-blue group-hover/item:text-white transition-all duration-300">
+                                            <span class="material-symbols-outlined text-sm font-bold">check</span>
+                                        </div>
+                                        <p class="text-slate-600 font-bold text-lg leading-tight group-hover/item:text-primary-blue transition-colors">Timely Digital Reminder Alerts</p>
+                                    </li>
+                                    <li class="flex items-start gap-5 group/item">
+                                        <div class="mt-1 w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue shrink-0 group-hover/item:bg-primary-blue group-hover/item:text-white transition-all duration-300">
+                                            <span class="material-symbols-outlined text-sm font-bold">check</span>
+                                        </div>
+                                        <p class="text-slate-600 font-bold text-lg leading-tight group-hover/item:text-primary-blue transition-colors">Expert Post-Vaccine Clinical Care</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Decorative Shapes -->
+                        <div class="absolute -top-6 -right-6 w-12 h-12 bg-yellow-200/40 rounded-full blur-xl animate-pulse"></div>
+                        <div class="absolute -bottom-10 -left-10 w-24 h-24 bg-pink-200/30 rounded-full blur-2xl"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature/Service Cards Grid -->
+        <section class="py-24 px-6 pastel-blue-bg border-y border-slate-100 relative">
+            <div class="max-w-7xl mx-auto relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="font-headline text-4xl font-bold text-clinic-navy mb-4">Vaccination Highlights</h2>
+                    <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">Safe and standardized vaccination pathways for your family.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-8 soft-rounded-card shadow-premium border border-slate-100 group hover:shadow-hospital transition-all duration-500">
+                        <div class="w-14 h-14 bg-soft-blue-bg rounded-2xl flex items-center justify-center text-primary-blue mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">event_available</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-clinic-navy mb-3 group-hover:text-primary-blue transition-colors">Standard Schedule</h3>
+                        <p class="text-slate-500 font-medium text-sm leading-relaxed">Complete vaccination as per national and international pediatric protocols.</p>
+                    </div>
+
+                    <div class="bg-white p-8 soft-rounded-card shadow-premium border border-slate-100 group hover:shadow-hospital transition-all duration-500">
+                        <div class="w-14 h-14 bg-soft-pink-bg rounded-2xl flex items-center justify-center text-accent-pink mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">flight_takeoff</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-clinic-navy mb-3 group-hover:text-accent-pink transition-colors">Travel Vaccines</h3>
+                        <p class="text-slate-500 font-medium text-sm leading-relaxed">Specific vaccination for children traveling abroad or moving to specialized zones.</p>
+                    </div>
+
+                    <div class="bg-white p-8 soft-rounded-card shadow-premium border border-slate-100 group hover:shadow-hospital transition-all duration-500">
+                        <div class="w-14 h-14 bg-soft-blue-bg rounded-2xl flex items-center justify-center text-primary-blue mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">psychology</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-clinic-navy mb-3 group-hover:text-primary-blue transition-colors">Safety Counseling</h3>
+                        <p class="text-slate-500 font-medium text-sm leading-relaxed">Expert discussions regarding vaccine benefits and pediatric vaccination.</p>
+                    </div>
+
+                    <div class="bg-white p-8 soft-rounded-card shadow-premium border border-slate-100 group hover:shadow-hospital transition-all duration-500">
+                        <div class="w-14 h-14 bg-soft-pink-bg rounded-2xl flex items-center justify-center text-accent-pink mb-6 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">history</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-clinic-navy mb-3 group-hover:text-accent-pink transition-colors">Digital Tracking</h3>
+                        <p class="text-slate-500 font-medium text-sm leading-relaxed">Meticulous recording and timely reminders for every upcoming vaccination dose.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-24 px-6 bg-white">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="font-headline text-4xl font-bold text-clinic-navy mb-4">Service FAQs</h2>
+                    <p class="text-lg text-slate-500 font-medium">Common questions about child vaccination and side effects.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <details class="group bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden" open>
+                        <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                            <span class="text-lg font-bold text-clinic-navy">Are optional vaccines necessary for my child?</span>
+                            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                        </summary>
+                        <div class="p-6 pt-0 text-slate-600 font-medium leading-relaxed border-t border-slate-100 bg-white/50">
+                            While mandatory vaccines cover high-risk illnesses, optional vaccines provide extra protection against specific infections like Japanese Encephalitis or Cervical Cancer (HPV). We discuss these based on your lifestyle and environmental factors.
+                        </div>
+                    </details>
+
+                    <details class="group bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden">
+                        <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                            <span class="text-lg font-bold text-clinic-navy">What if we miss a scheduled vaccination date?</span>
+                            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                        </summary>
+                        <div class="p-6 pt-0 text-slate-600 font-medium leading-relaxed border-t border-slate-100 bg-white/50">
+                            Don't worry. Most vaccines have a 'catch-up' window. Please contact us as soon as possible to reschedule and maintain the integrity of your child's vaccination path.
+                        </div>
+                    </details>
+
+                    <details class="group bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden">
+                        <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                            <span class="text-lg font-bold text-clinic-navy">How do you manage post-vaccine fever?</span>
+                            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                        </summary>
+                        <div class="p-6 pt-0 text-slate-600 font-medium leading-relaxed border-t border-slate-100 bg-white/50">
+                            Mild fever is a normal sign that the body is building protection. We provide clear clinical guidance on dosage for fever management and are always available for follow-up calls if needed.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Premium Footer -->
+    <footer class="bg-clinic-navy text-white pt-20 pb-16 px-8 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-blue via-accent-pink to-primary-blue opacity-30"></div>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-16 mb-16">
+                <!-- Branding -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-premium transform -rotate-3">
+                            <img src="clinic-mascot-logo.jpg" alt="Logo" class="h-10 w-10 object-contain">
+                        </div>
+                        <div>
+                            <span class="text-2xl font-bold font-headline leading-none block text-white">Dr. Pradeep</span>
+                            <span class="text-xs uppercase tracking-[0.3em] font-bold text-primary-blue/80">Children's Clinic</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-6 font-medium">
+                        Compassionate, child-centered pediatric and neonatal care backed by 16+ years of international clinical excellence.
+                    </p>
+
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h4 class="text-primary-blue uppercase tracking-[0.2em] font-bold text-sm mb-6">Quick Access</h4>
+                    <ul class="space-y-5">
+                        <li><a href="index.html" class="text-lg text-slate-300 hover:text-white hover:translate-x-2 inline-block transition-all">Home</a></li>
+                        <li><a href="about.html" class="text-lg text-slate-300 hover:text-white hover:translate-x-2 inline-block transition-all">Meet the Doctor</a></li>
+                        <li><a href="services.html" class="text-lg text-slate-300 hover:text-white hover:translate-x-2 inline-block transition-all">Clinical Services</a></li>
+                        <li><a href="gallery.html" class="text-lg text-slate-300 hover:text-white hover:translate-x-2 inline-block transition-all">Clinic Gallery</a></li>
+                        <li><a href="contact.html" class="text-lg text-slate-300 hover:text-white hover:translate-x-2 inline-block transition-all">Book Appointment</a></li>
+                    </ul>
+                </div>
+
+                <!-- Clinic Location -->
+                <div class="lg:col-span-2">
+                    <h4 class="text-primary-blue uppercase tracking-[0.2em] font-bold text-sm mb-6">Clinic Location</h4>
+                    <div class="bg-white/5 rounded-[2rem] p-8 border border-white/10 backdrop-blur-sm">
+                        <div class="flex flex-col md:flex-row gap-10">
+                            <div class="flex-grow">
+                                <h5 class="font-bold text-xl mb-4 text-white">Visit Our Sanctuary</h5>
+                                <p class="text-slate-400 font-medium mb-6 leading-relaxed">
+                                    #38, 1st A main Road, Above I planet,<br>
+                                    Yelahanka Satellite town, Yelahanka New Town,<br>
+                                    Bengaluru - 560064
+                                </p>
+                                <a href="https://share.google/sWrcJBqr1XBPVmuWk" target="_blank" class="inline-flex items-center gap-2 text-primary-blue font-bold hover:gap-4 transition-all uppercase tracking-widest text-[10px]">
+                                    Get Directions
+                                    <span class="material-symbols-outlined text-sm">directions</span>
+                                </a>
+                            </div>
+                            <div class="shrink-0">
+                                <div class="w-full md:w-40 h-40 rounded-[2rem] bg-white/5 flex flex-col items-center justify-center text-center p-4 border border-white/10 group hover:border-primary-blue/50 transition-colors">
+                                    <span class="material-symbols-outlined text-primary-blue text-4xl mb-1 group-hover:scale-110 transition-transform">call</span>
+                                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3">Call Now</span>
+                                    <div class="space-y-2">
+                                        <a href="tel:9187606838" class="text-xs font-bold text-white hover:text-primary-blue flex items-center justify-center gap-2 transition-all">
+                                            <span class="material-symbols-outlined text-sm">phone_iphone</span>
+                                            9187606838
+                                        </a>
+                                        <a href="tel:08046971142" class="text-xs font-bold text-white hover:text-primary-blue flex items-center justify-center gap-2 transition-all">
+                                            <span class="material-symbols-outlined text-sm">call</span>
+                                            08046971142
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+                <p class="text-slate-500 font-bold text-xs uppercase tracking-widest">
+                    &copy; 2024 Dr. Pradeep Children's Clinic. Professional Pediatric Healthcare.
+                </p>
+                <div class="flex gap-10">
+                    <a href="privacy-policy.html" class="text-xs text-slate-500 font-bold uppercase tracking-widest hover:text-primary-blue transition-colors">Privacy Policy</a>
+                    <a href="terms-and-conditions.html" class="text-xs text-slate-500 font-bold uppercase tracking-widest hover:text-primary-blue transition-colors">Terms & Conditions</a>
+                    <a href="https://wa.me/919945379333" target="_blank" class="text-xs text-slate-500 font-bold uppercase tracking-widest hover:text-primary-blue transition-colors">Developed by ROI Infotech</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Standardized Floating Action Buttons -->
+    <div class="floating-container">
+        <a href="https://wa.me/9187606838" target="_blank" class="floating-btn btn-whatsapp" title="WhatsApp Us">
+            <span class="material-symbols-outlined">chat</span>
+        </a>
+        <button class="floating-btn btn-call" title="Call Clinic">
+            <span class="material-symbols-outlined">call</span>
+        </button>
+        <button id="scrollTopBtn" class="floating-btn btn-scroll-top" title="Scroll to Top">
+            <span class="material-symbols-outlined">arrow_upward</span>
+        </button>
+    </div>
+    <script src="floating-buttons.js?v=1.1"></script>
+
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Terms & Conditions | Dr. Pradeep Children's Clinic</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=DM+Serif+Display:ital@0;1&amp;family=Outfit:wght@400;500;600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="floating-buttons.css"/>
+    <link rel="stylesheet" href="global.css"/>
+    <script src="scroll-reveal.js" defer></script>
+    <script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                colors: {
+                  "clinic-navy": "#1A1A1A",
+                  "primary": "#1E88E5",
+                  "accent": "#EC407A",
+                  "soft-blue-bg": "#E3F2FD",
+                  "soft-pink-bg": "#FCE4EC",
+                  "neutral-white": "#FFFFFF",
+                  "primary-blue": "#1E88E5",
+                  "accent-pink": "#EC407A"
+                },
+                fontFamily: {
+                  "headline": ["Playfair Display", "serif"],
+                  "body": ["Plus Jakarta Sans", "sans-serif"]
+                },
+                borderRadius: {
+                  "premium": "24px",
+                  "standard": "16px"
+                },
+                boxShadow: {
+                  "premium": "0 20px 40px -12px rgba(30, 136, 229, 0.15)",
+                  "hospital": "0 32px 64px -12px rgba(0, 0, 0, 0.14)"
+                },
+                backgroundImage: {
+                  "hero-gradient": "linear-gradient(135deg, rgba(30, 136, 229, 0.95) 0%, rgba(236, 64, 122, 0.9) 100%)",
+                  "soft-blue-gradient": "linear-gradient(180deg, #FFFFFF 0%, #E3F2FD 100%)",
+                  "soft-pink-gradient": "linear-gradient(180deg, #FFFFFF 0%, #FCE4EC 100%)"
+                }
+              },
+            },
+          }
+    </script>
+    <style>
+        :root {
+            --primary-blue: #1E88E5;
+            --clinic-navy: #1A1A1A;
+            --accent-pink: #EC407A;
+            --soft-blue-bg: #E3F2FD;
+            --soft-pink-bg: #FCE4EC;
+        }
+        .bg-sky-pink-gradient {
+            background: linear-gradient(180deg, #FFFFFF 0%, #E3F2FD 100%);
+        }
+        .premium-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 94, 161, 0.05);
+        }
+        .legal-content h2 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--clinic-navy);
+            font-weight: 700;
+            font-size: 1.75rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .legal-content h2::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: var(--primary-blue);
+            border-radius: 4px;
+        }
+        .legal-content p {
+            color: #475569;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        .legal-content ul {
+            margin-bottom: 1.5rem;
+            list-style: none;
+            padding-left: 0.5rem;
+        }
+        .legal-content li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #475569;
+            line-height: 1.6;
+        }
+        .legal-content li::before {
+            content: 'verified';
+            font-family: 'Material Symbols Outlined';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--primary-blue);
+            font-size: 18px;
+            font-variation-settings: 'FILL' 1;
+        }
+        .breadcrumb-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #64748b;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        .breadcrumb-item a:hover {
+            color: var(--primary-blue);
+        }
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 3.5rem;
+            height: 3.5rem;
+            background: white;
+            color: var(--clinic-navy);
+            border-radius: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(0, 94, 161, 0.1);
+            border: 1px solid #f1f5f9;
+            z-index: 100;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .scroll-top-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(30, 136, 229, 0.15);
+            background: var(--primary-blue);
+            color: white;
+            border-color: var(--primary-blue);
+        }
+    </style>
+</head>
+<body class="font-body text-on-surface bg-white">
+
+    <!-- Header / Navbar -->
+    <nav id="navbar" class="fixed top-4 inset-x-2 md:inset-x-8 z-50 flex items-center justify-between max-w-7xl mx-auto rounded-[2rem] px-4 md:px-6 py-2.5 md:py-3 premium-nav transition-all duration-300">
+        <a href="index.html" class="flex items-center gap-2 md:gap-3 group shrink-0">
+            <div class="w-10 h-10 md:w-12 md:h-12 bg-white rounded-xl md:rounded-2xl flex items-center justify-center shadow-premium rotate-[-3deg] group-hover:rotate-0 transition-transform duration-500 overflow-hidden shrink-0">
+                <img src="clinic-mascot-logo.jpg" alt="Logo" class="h-8 w-8 md:h-10 md:w-10 object-contain">
+            </div>
+            <div class="flex flex-col">
+                <span class="text-lg md:text-2xl font-bold font-headline tracking-tighter text-clinic-navy block leading-none">Dr. Pradeep</span>
+                <span class="text-[8px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold text-primary/80">Children's Clinic</span>
+            </div>
+        </a>
+        
+        <div class="hidden lg:flex items-center gap-6 font-medium text-sm">
+            <a href="index.html" class="nav-link text-slate-600 hover:text-primary transition-colors">Home</a>
+            <a href="about.html" class="nav-link text-slate-600 hover:text-primary transition-colors">About</a>
+            
+            <!-- Services Dropdown -->
+            <div class="relative group">
+                <button class="nav-link text-slate-600 hover:text-primary transition-colors flex items-center gap-1 py-4">
+                    Services
+                    <span class="material-symbols-outlined text-sm duration-300 group-hover:rotate-180">expand_more</span>
+                </button>
+                <div class="absolute top-full left-0 w-72 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50 p-2">
+                    <a href="child-healthcare.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-600 hover:text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-blue-100/50 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-white transition-colors">
+                            <span class="material-symbols-outlined text-xl">medical_services</span>
+                        </div>
+                        <span class="text-sm font-semibold">Child Healthcare</span>
+                    </a>
+                    <a href="vaccination.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-600 hover:text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-blue-100/50 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-white transition-colors">
+                            <span class="material-symbols-outlined text-xl">vaccines</span>
+                        </div>
+                        <span class="text-sm font-semibold">Vaccination</span>
+                    </a>
+                    <a href="newborn-care.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-600 hover:text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-blue-100/50 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-white transition-colors">
+                            <span class="material-symbols-outlined text-xl">child_care</span>
+                        </div>
+                        <span class="text-sm font-semibold">Newborn Care</span>
+                    </a>
+                    <a href="growth-monitoring.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-600 hover:text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-blue-100/50 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-white transition-colors">
+                            <span class="material-symbols-outlined text-xl">monitoring</span>
+                        </div>
+                        <span class="text-sm font-semibold">Growth Monitoring</span>
+                    </a>
+                    <a href="subspecialty-care.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-600 hover:text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-blue-100/50 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-white transition-colors">
+                            <span class="material-symbols-outlined text-xl">health_metrics</span>
+                        </div>
+                        <span class="text-sm font-semibold">Subspecialty Care</span>
+                    </a>
+                    <a href="parental-guidance.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-600 hover:text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-blue-100/50 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-white transition-colors">
+                            <span class="material-symbols-outlined text-xl">family_restroom</span>
+                        </div>
+                        <span class="text-sm font-semibold">Parental Guidance</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="gallery.html" class="nav-link text-slate-600 hover:text-primary transition-colors">Gallery</a>
+            <a href="contact.html" class="nav-link text-slate-600 hover:text-primary transition-colors">Contact</a>
+        </div>
+
+        <div class="flex items-center gap-2 md:gap-3">
+            <a href="contact.html" class="bg-primary text-white !px-3 !py-2 md:!px-5 md:!py-2.5 !text-[10px] md:!text-sm rounded-full font-bold hover:bg-clinic-navy duration-200 transition-all shadow-md shrink-0">
+                Book Now
+            </a>
+            <button class="lg:hidden p-1.5 text-primary" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 mt-2 p-6 bg-white rounded-2xl shadow-2xl border border-slate-100 flex flex-col gap-4 lg:hidden">
+            <a href="index.html" class="text-slate-600 font-semibold">Home</a>
+            <a href="about.html" class="text-slate-600 font-semibold">About</a>
+            <button class="flex items-center justify-between text-primary font-bold w-full" onclick="document.getElementById('mobile-services').classList.toggle('hidden')">
+                Services <span class="material-symbols-outlined">expand_more</span>
+            </button>
+            <div id="mobile-services" class="hidden flex flex-col gap-3 pl-4 border-l-2 border-primary/20">
+                <a href="child-healthcare.html" class="text-slate-600 font-medium">Child Healthcare</a>
+                <a href="vaccination.html" class="text-slate-600 font-medium">Vaccination</a>
+                <a href="newborn-care.html" class="text-slate-600 font-medium">Newborn Care</a>
+                <a href="growth-monitoring.html" class="text-slate-600 font-medium">Growth Monitoring</a>
+                <a href="subspecialty-care.html" class="text-slate-600 font-medium">Subspecialty Care</a>
+                <a href="parental-guidance.html" class="text-slate-600 font-medium">Parental Guidance</a>
+            </div>
+            <a href="gallery.html" class="text-slate-600 font-semibold">Gallery</a>
+            <a href="contact.html" class="text-slate-600 font-semibold">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header Hero -->
+    <section class="pt-36 pb-16 bg-sky-pink-gradient relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <!-- Breadcrumbs -->
+            <div class="flex items-center gap-3 mb-8 ">
+                <div class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                </div>
+                <span class="material-symbols-outlined text-slate-300 text-sm">chevron_right</span>
+                <div class="breadcrumb-item text-primary-blue">
+                    Terms & Conditions
+                </div>
+            </div>
+
+            <h1 class="  hero-title text-clinic-navy leading-tight tracking-tight mb-6 ">
+                Terms & <span class="text-primary-blue not- highlight-slide">Conditions</span>
+            </h1>
+            <p class="  body-subtext max-w-2xl mx-auto">
+                The governing principles and legal framework of our clinical services and patient care delivery.
+            </p>
+        </div>
+        
+        <!-- Decorative Elements -->
+        <div class="absolute top-20 right-[-5%] w-96 h-96 bg-primary-blue/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-[-10%] left-[-5%] w-72 h-72 bg-accent-pink/5 rounded-full blur-3xl"></div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6 legal-content">
+            <div class="">
+                <h2>1. Introduction</h2>
+                <p>Welcome to Dr. Pradeep Children's Clinic. By accessing this website and using our clinical services, you acknowledge that you have read, understood, and agreed to be bound by the following Terms & Conditions. These terms apply to all visitors, patients, and their legal guardians.</p>
+            </div>
+
+            <div class="" style="transition-delay: 0.1s">
+                <h2>2. Use of Website</h2>
+                <p>The content provided on this website is for general informational purposes only. You agree to use the site only for lawful purposes related to seeking pediatric care or medical information. Any unauthorized use, reproduction, or distribution of clinic branding and clinical content is strictly prohibited.</p>
+            </div>
+
+            <div class="" style="transition-delay: 0.2s">
+                <h2>3. Medical Disclaimer</h2>
+                <p>The information on this website is NOT intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of Dr. Pradeep or another qualified pediatric healthcare provider with any questions you may have regarding a medical condition. In case of a medical emergency, please proceed to the nearest emergency room immediately.</p>
+            </div>
+
+            <div class="" style="transition-delay: 0.3s">
+                <h2>4. Appointments & Services</h2>
+                <p>Scheduling appointments through our website or contact numbers does not guarantee immediate availability. We reserve the right to reschedule or cancel appointments due to clinical emergencies or unforeseen circumstances. Please provide at least 24 hours' notice for cancellations.</p>
+            </div>
+
+            <div class="" style="transition-delay: 0.4s">
+                <h2>5. User Responsibilities</h2>
+                <p>Parents and legal guardians are responsible for providing accurate and complete medical histories and contact details. It is your responsibility to follow up on recommended treatments, vaccinations, and growth monitoring schedules discussed during clinical consultations.</p>
+            </div>
+
+            <div class="" style="transition-delay: 0.5s">
+                <h2>6. Limitation of Liability</h2>
+                <p>Dr. Pradeep Children's Clinic shall not be held liable for any indirect, incidental, or consequential damages resulting from the use of this website or the information contained herein. While we strive for absolute accuracy, medical science is constantly evolving and information may occasionally be under update.</p>
+            </div>
+
+            <div class="" style="transition-delay: 0.6s">
+                <h2>7. Changes to Terms</h2>
+                <p>We reserve the right to modify these Terms & Conditions at any time without prior notice. The updated version will be posted on this page and your continued use of our services following such changes constitutes your acceptance of the new terms.</p>
+            </div>
+
+            <div class="" style="transition-delay: 0.7s">
+                <h2>8. Contact Information</h2>
+                <p>If you have any questions or require clarification regarding these terms, please feel free to reach out to our clinic team:</p>
+                 <div class="bg-soft-blue-bg/30 p-8 rounded-[2rem] border border-primary-blue/10 mt-6 font-bold">
+                    <p class="mb-2 uppercase tracking-widest text-[10px] text-primary-blue">Official Contact</p>
+                    <p class="mb-1 text-clinic-navy  text-lg uppercase tracking-tight">Dr. Pradeep <span class="text-primary-blue not-">Children's Clinic</span></p>
+                    <p class="mb-1 text-slate-500 font-medium">#38, 1st A main Road, Above I planet, Yelahanka Satellite town, Yelahanka New Town, Bengaluru-560064</p>
+                    <p class="text-primary-blue font-bold text-xl  tracking-tight transition-all hover:scale-105 inline-block">08046971142</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer class="bg-clinic-navy text-white pt-20 pb-16 px-8 relative overflow-hidden mt-16">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-blue via-accent-pink to-primary-blue opacity-30"></div>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-16 mb-16">
+                <!-- Branding -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-premium transform -rotate-3">
+                            <img src="clinic-mascot-logo.jpg" alt="Logo" class="h-10 w-10 object-contain">
+                        </div>
+                        <div>
+                            <span class="text-2xl font-bold font-headline leading-none block text-white">Dr. Pradeep</span>
+                            <span class="text-xs uppercase tracking-[0.3em] font-bold text-primary-blue/80">Children's Clinic</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-6 font-medium">
+                        Compassionate, child-centered pediatric and neonatal care backed by 16+ years of international clinical excellence.
+                    </p>
+
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h4 class="text-primary-blue uppercase tracking-[0.2em] font-bold text-sm mb-6">Quick Access</h4>
+                    <ul class="space-y-5">
+                        <li><a href="index.html" class="text-lg text-slate-300 hover:text-white hover:translate-x-2 inline-block transition-all">Home</a></li>
+                        <li><a href="about.html" class="text-lg text-slate-300 hover:text-white hover:translate-x-2 inline-block transition-all">Meet the Doctor</a></li>
+                        <li><a href="services.html" class="text-lg text-slate-300 hover:text-white hover:translate-x-2 inline-block transition-all">Clinical Services</a></li>
+                        <li><a href="gallery.html" class="text-lg text-slate-300 hover:text-white hover:translate-x-2 inline-block transition-all">Clinic Gallery</a></li>
+                        <li><a href="contact.html" class="text-lg text-slate-300 hover:text-white hover:translate-x-2 inline-block transition-all">Book Appointment</a></li>
+                    </ul>
+                </div>
+
+                <!-- Clinic Location -->
+                <div class="lg:col-span-2">
+                    <h4 class="text-primary-blue uppercase tracking-[0.2em] font-bold text-sm mb-6">Clinic Location</h4>
+                    <div class="bg-white/5 rounded-[2rem] p-8 border border-white/10 backdrop-blur-sm">
+                        <div class="flex flex-col md:flex-row gap-10">
+                            <div class="flex-grow">
+                                <h5 class="font-bold text-xl mb-4 text-white">Visit Our Sanctuary</h5>
+                                <p class="text-slate-400 font-medium mb-6 leading-relaxed">
+                                    #38, 1st A main Road, Above I planet,<br>
+                                    Yelahanka Satellite town, Yelahanka New Town,<br>
+                                    Bengaluru - 560064
+                                </p>
+                                <a href="https://share.google/sWrcJBqr1XBPVmuWk" target="_blank" class="inline-flex items-center gap-2 text-primary-blue font-bold hover:gap-4 transition-all uppercase tracking-widest text-[10px]">
+                                    Get Directions
+                                    <span class="material-symbols-outlined text-sm">directions</span>
+                                </a>
+                            </div>
+                            <div class="shrink-0">
+                                <div class="w-full md:w-40 h-40 rounded-[2rem] bg-white/5 flex flex-col items-center justify-center text-center p-4 border border-white/10 group hover:border-primary-blue/50 transition-colors">
+                                    <span class="material-symbols-outlined text-primary-blue text-4xl mb-1 group-hover:scale-110 transition-transform">call</span>
+                                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3">Call Now</span>
+                                    <div class="space-y-2">
+                                        <a href="tel:9187606838" class="text-xs font-bold text-white hover:text-primary-blue flex items-center justify-center gap-2 transition-all">
+                                            <span class="material-symbols-outlined text-sm">phone_iphone</span>
+                                            9187606838
+                                        </a>
+                                        <a href="tel:08046971142" class="text-xs font-bold text-white hover:text-primary-blue flex items-center justify-center gap-2 transition-all">
+                                            <span class="material-symbols-outlined text-sm">call</span>
+                                            08046971142
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+                <p class="text-slate-500 font-bold text-xs uppercase tracking-widest">
+                    &copy; 2024 Dr. Pradeep Children's Clinic. Professional Pediatric Healthcare.
+                </p>
+                <div class="flex gap-10">
+                    <a href="privacy-policy.html" class="text-xs text-slate-500 font-bold uppercase tracking-widest hover:text-primary-blue transition-colors">Privacy Policy</a>
+                    <a href="terms-and-conditions.html" class="text-xs text-slate-500 font-bold uppercase tracking-widest hover:text-primary-blue transition-colors">Terms & Conditions</a>
+                    <a href="https://wa.me/919945379333" target="_blank" class="text-xs text-slate-500 font-bold uppercase tracking-widest hover:text-primary-blue transition-colors">Developed by ROI Infotech</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Standardized Floating Action Buttons -->
+    <div class="floating-container">
+        <a href="https://wa.me/9187606838" target="_blank" class="floating-btn btn-whatsapp" title="WhatsApp Us">
+            <span class="material-symbols-outlined">chat</span>
+        </a>
+        <button class="floating-btn btn-call" title="Call Clinic">
+            <span class="material-symbols-outlined">call</span>
+        </button>
+        <button id="scrollTopBtn" class="floating-btn btn-scroll-top" title="Scroll to Top">
+            <span class="material-symbols-outlined">arrow_upward</span>
+        </button>
+    </div>
+
+    <script src="scroll-reveal.js"></script>
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'mt-2', 'shadow-2xl');
+            } else {
+                nav.classList.remove('py-2', 'mt-2', 'shadow-2xl');
+            }
+        });
+    </script>
+    <script src="floating-buttons.js?v=1.1"></script>
+</body>
+</html>

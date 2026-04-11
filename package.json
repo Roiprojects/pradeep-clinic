@@ -1,0 +1,14 @@
+{
+  "name": "dr-pradeep-clinic",
+  "version": "1.0.0",
+  "description": "Pediatric Clinic Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve -l 3000"
+  },
+  "dependencies": {
+    "@isomorphic-git/lightning-fs": "^4.6.2",
+    "isomorphic-git": "^1.37.5",
+    "serve": "^14.2.0"
+  }
+}

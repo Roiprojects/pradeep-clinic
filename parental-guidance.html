@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Parenting Guidance & Counseling | Dr. Pradeep Children's Clinic</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="floating-buttons.css"/>
+    <link rel="stylesheet" href="global.css"/>
+    <script src="scroll-reveal.js" defer></script>
+    <script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                colors: {
+                  "clinic-navy": "#1A1A1A",
+                  "primary": "#1E88E5",
+                  "accent": "#EC407A",
+                  "soft-blue-bg": "#E3F2FD",
+                  "soft-pink-bg": "#FCE4EC",
+                  "neutral-white": "#FFFFFF",
+                  "primary-blue": "#1E88E5",
+                  "accent-pink": "#EC407A"
+                },
+                fontFamily: {
+                  "headline": ["Playfair Display", "serif"],
+                  "body": ["Plus Jakarta Sans", "sans-serif"]
+                },
+                borderRadius: {
+                  "premium": "24px",
+                  "standard": "16px"
+                },
+                boxShadow: {
+                  "premium": "0 20px 40px -12px rgba(30, 136, 229, 0.15)",
+                  "hospital": "0 32px 64px -12px rgba(0, 0, 0, 0.14)"
+                },
+                backgroundImage: {
+                  "hero-gradient": "linear-gradient(135deg, rgba(30, 136, 229, 0.95) 0%, rgba(236, 64, 122, 0.9) 100%)",
+                  "soft-blue-gradient": "linear-gradient(180deg, #FFFFFF 0%, #E3F2FD 100%)",
+                  "soft-pink-gradient": "linear-gradient(180deg, #FFFFFF 0%, #FCE4EC 100%)"
+                }
+              },
+            },
+          }
+    </script>
+</head>
+<body class="font-body text-slate-900 bg-white selection:bg-primary-blue/10 transition-colors duration-500">
+
+    <!-- Header / Navbar -->
+    <nav id="navbar" class="fixed top-4 inset-x-2 md:inset-x-8 z-50 flex items-center justify-between max-w-7xl mx-auto rounded-[2rem] px-4 md:px-6 py-2.5 md:py-3 premium-nav transition-all duration-300">
+        <a href="index.html" class="flex items-center gap-2 md:gap-3 group shrink-0">
+            <div class="w-10 h-10 md:w-12 md:h-12 bg-white rounded-xl md:rounded-2xl flex items-center justify-center shadow-premium rotate-[-3deg] group-hover:rotate-0 transition-transform duration-500 overflow-hidden shrink-0">
+                <img src="clinic-mascot-logo.jpg" alt="Logo" class="h-8 w-8 md:h-10 md:w-10 object-contain">
+            </div>
+            <div class="flex flex-col">
+                <span class="text-lg md:text-2xl font-bold font-headline tracking-tighter text-clinic-navy block leading-none">Dr. Pradeep</span>
+                <span class="text-[8px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold text-primary/80">Children's Clinic</span>
+            </div>
+        </a>
+        
+        <div class="hidden lg:flex items-center gap-6 font-medium text-sm">
+            <a href="index.html" class="nav-link text-slate-600 hover:text-primary transition-colors">Home</a>
+            <a href="about.html" class="nav-link text-slate-600 hover:text-primary transition-colors">About</a>
+            
+            <!-- Services Dropdown -->
+            <div class="relative group">
+                <button class="nav-link active text-primary font-bold border-bottom-2 border-primary transition-colors flex items-center gap-1 py-4">
+                    Services
+                    <span class="material-symbols-outlined text-sm duration-300 group-hover:rotate-180">expand_more</span>
+                </button>
+                <div class="absolute top-full left-0 w-72 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50 p-2">
+                    <a href="child-healthcare.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-600 hover:text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-blue-100/50 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-white transition-colors">
+                            <span class="material-symbols-outlined text-xl">medical_services</span>
+                        </div>
+                        <span class="text-sm font-semibold">Child Healthcare</span>
+                    </a>
+                    <a href="vaccination.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-600 hover:text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-blue-100/50 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-white transition-colors">
+                            <span class="material-symbols-outlined text-xl">vaccines</span>
+                        </div>
+                        <span class="text-sm font-semibold">Vaccination</span>
+                    </a>
+                    <a href="newborn-care.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-600 hover:text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-blue-100/50 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-white transition-colors">
+                            <span class="material-symbols-outlined text-xl">child_care</span>
+                        </div>
+                        <span class="text-sm font-semibold">Newborn Care</span>
+                    </a>
+                    <a href="growth-monitoring.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-600 hover:text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-blue-100/50 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-white transition-colors">
+                            <span class="material-symbols-outlined text-xl">monitoring</span>
+                        </div>
+                        <span class="text-sm font-semibold">Growth Monitoring</span>
+                    </a>
+                    <a href="subspecialty-care.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-600 hover:text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-blue-100/50 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-white transition-colors">
+                            <span class="material-symbols-outlined text-xl">health_metrics</span>
+                        </div>
+                        <span class="text-sm font-semibold">Subspecialty Care</span>
+                    </a>
+                    <a href="parental-guidance.html" class="flex items-center gap-3 p-3 rounded-xl bg-blue-50 text-primary transition-all group/item">
+                        <div class="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center shadow-sm">
+                            <span class="material-symbols-outlined text-xl">family_restroom</span>
+                        </div>
+                        <span class="text-sm font-bold">Parental Guidance</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="gallery.html" class="nav-link text-slate-600 hover:text-primary transition-colors">Gallery</a>
+            <a href="contact.html" class="nav-link text-slate-600 hover:text-primary transition-colors">Contact</a>
+        </div>
+
+        <div class="flex items-center gap-2 md:gap-3">
+            <a href="contact.html" class="bg-primary text-white !px-3 !py-2 md:!px-5 md:!py-2.5 !text-[10px] md:!text-sm rounded-full font-bold hover:bg-clinic-navy duration-200 transition-all shadow-md shrink-0">
+                Book Now
+            </a>
+            <button class="lg:hidden p-1.5 text-primary" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 mt-2 p-6 bg-white rounded-2xl shadow-2xl border border-slate-100 flex flex-col gap-4 lg:hidden">
+            <a href="index.html" class="text-slate-600 font-semibold">Home</a>
+            <a href="about.html" class="text-slate-600 font-semibold">About</a>
+            <button class="flex items-center justify-between text-primary font-bold w-full" onclick="document.getElementById('mobile-services').classList.toggle('hidden')">
+                Services <span class="material-symbols-outlined">expand_more</span>
+            </button>
+            <div id="mobile-services" class="hidden flex flex-col gap-3 pl-4 border-l-2 border-primary/20">
+                <a href="child-healthcare.html" class="text-slate-600 font-medium">Child Healthcare</a>
+                <a href="vaccination.html" class="text-slate-600 font-medium">Vaccination</a>
+                <a href="newborn-care.html" class="text-slate-600 font-medium">Newborn Care</a>
+                <a href="growth-monitoring.html" class="text-slate-600 font-medium">Growth Monitoring</a>
+                <a href="subspecialty-care.html" class="text-slate-600 font-medium">Subspecialty Care</a>
+                <a href="parental-guidance.html" class="font-bold text-primary">Parental Guidance</a>
+            </div>
+            <a href="gallery.html" class="text-slate-600 font-semibold">Gallery</a>
+            <a href="contact.html" class="text-slate-600 font-semibold">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Section 1: Cinematic Hero -->
+        <section class="relative h-[85vh] flex items-center justify-center overflow-hidden pt-20 pediatric-theme-container">
+            <!-- Floating Clouds -->
+            <div class="pediatric-cloud w-64 h-32 top-10 right-20 animate-drift"></div>
+            <div class="pediatric-cloud w-80 h-40 bottom-10 left-10 animate-drift-slow opacity-40"></div>
+            
+            <div class="absolute inset-0 z-0">
+                <img src="assets/parental-guidance-hero.png" alt="Parental Guidance" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-clinic-navy/90 via-clinic-navy/60 to-transparent"></div>
+            </div>
+            
+            <!-- Rainbow Accent -->
+            <div class="rainbow-accent top-5 left-1/4 opacity-20"></div>
+            
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="max-w-3xl" data-reveal="left">
+                    <div class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 mb-6">
+                        <span class="material-symbols-outlined text-primary-blue">family_restroom</span>
+                        <span class="text-xs font-bold text-white uppercase tracking-widest">Partners in Parenting</span>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-bold text-white font-headline mb-6 leading-tight">
+                        Empowering <span class="text-primary-blue">Families</span> Through Guidance
+                    </h1>
+                    <p class="text-xl text-slate-200 mb-8 leading-relaxed max-w-2xl">
+                        Expert medical counseling and practical strategies for your child's emotional, behavioral, and physical well-being at every stage.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="contact.html" class="bg-primary-blue text-white px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-primary-blue transition-all shadow-lg shadow-primary-blue/20">Book Counseling</a>
+                        <a href="#expertise" class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-xl font-bold text-sm uppercase tracking-widest hover:bg-white/20 transition-all">Explore Guidance</a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce flex flex-col items-center gap-2">
+                <span class="text-white/40 text-[10px] uppercase tracking-[0.3em] font-bold">Scroll to Explore</span>
+                <span class="material-symbols-outlined text-white/40">expand_more</span>
+            </div>
+        </section>
+
+        <!-- Why Choose Our Care Section (Sky Theme Modernized) -->
+        <section id="expertise" class="py-24 px-6 relative overflow-hidden sky-theme-section">
+            <!-- Animated Background Elements -->
+            <div class="floating-cloud w-64 h-32 top-10 left-12 animate-sky-drift opacity-60"></div>
+            <div class="floating-cloud w-96 h-48 -bottom-12 -right-12 animate-sky-drift-slow opacity-40"></div>
+            <div class="floating-cloud w-72 h-36 top-1/2 -left-16 animate-sky-drift-reverse opacity-30"></div>
+            
+            <!-- Sparkles -->
+            <div class="sparkle-particle top-24 right-1/4"></div>
+            <div class="sparkle-particle bottom-32 left-1/3" style="animation-delay: 1.5s;"></div>
+            <div class="sparkle-particle top-1/2 right-12" style="animation-delay: 3s;"></div>
+
+            <div class="max-w-7xl mx-auto relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                    <!-- Left: Existing Text Content -->
+                    <div class="space-y-8">
+                        <div class="inline-block p-3 px-6 bg-white/50 backdrop-blur-sm rounded-2xl border-l-4 border-primary-blue shadow-sm">
+                             <h2 class="text-3xl font-bold text-clinic-navy font-headline">Building a Strong Family Foundation</h2>
+                        </div>
+                        <div class="space-y-6 text-lg text-slate-600 leading-relaxed font-medium">
+                            <p>Navigating the journey of parenthood can be complex and overwhelming. At Dr. Pradeep Children's Clinic, we provide specialized medical counseling tailored to your child's unique developmental needs and your family's dynamic.</p>
+                            <p>Our parental guidance services cover critical areas from sleep hygiene and behavioral guidance for toddlers to psychosocial support for adolescents, ensuring your child thrives emotionally and socially.</p>
+                            <p>Empowered parents raise healthy, resilient children. We believe in providing you with the tools and confidence to manage your child's well-being effectively.</p>
+                        </div>
+                        <div class="pt-6">
+                            <a href="contact.html" class="inline-flex items-center gap-2 bg-primary-blue text-white px-8 py-4 rounded-[1.2rem] font-bold text-sm uppercase tracking-widest hover:bg-clinic-navy transition-all duration-300 shadow-xl shadow-blue-200 group">
+                                Enquire Now
+                                <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Modernized Benefit Card -->
+                    <div class="lg:pl-10 relative">
+                        <div class="relative group">
+                            <!-- Rainbow Glow Effect -->
+                            <div class="rainbow-halo"></div>
+                            
+                            <div class="sky-card-glass p-10 md:p-14 relative overflow-hidden">
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-primary-blue/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                                
+                                <h3 class="font-headline text-3xl font-bold mb-10 text-primary-blue flex items-center gap-3">
+                                    Why Choose Our Care?
+                                    <span class="material-symbols-outlined animate-pulse">auto_awesome</span>
+                                </h3>
+                                
+                                <ul class="space-y-6">
+                                    <li class="flex items-start gap-5 group/item">
+                                        <div class="mt-1 w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue shrink-0 group-hover/item:bg-primary-blue group-hover/item:text-white transition-all duration-300">
+                                            <span class="material-symbols-outlined text-sm font-bold">psychology</span>
+                                        </div>
+                                        <p class="text-slate-600 font-bold text-lg leading-tight group-hover/item:text-primary-blue transition-colors">Expert Behavioral & Social Guidance</p>
+                                    </li>
+                                    <li class="flex items-start gap-5 group/item">
+                                        <div class="mt-1 w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue shrink-0 group-hover/item:bg-primary-blue group-hover/item:text-white transition-all duration-300">
+                                            <span class="material-symbols-outlined text-sm font-bold">nutrition</span>
+                                        </div>
+                                        <p class="text-slate-600 font-bold text-lg leading-tight group-hover/item:text-primary-blue transition-colors">Specialized Nutritional Counseling</p>
+                                    </li>
+                                    <li class="flex items-start gap-5 group/item">
+                                        <div class="mt-1 w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue shrink-0 group-hover/item:bg-primary-blue group-hover/item:text-white transition-all duration-300">
+                                            <span class="material-symbols-outlined text-sm font-bold">shield_with_heart</span>
+                                        </div>
+                                        <p class="text-slate-600 font-bold text-lg leading-tight group-hover/item:text-primary-blue transition-colors">Psychosocial Support for Adolescents</p>
+                                    </li>
+                                    <li class="flex items-start gap-5 group/item">
+                                        <div class="mt-1 w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue shrink-0 group-hover/item:bg-primary-blue group-hover/item:text-white transition-all duration-300">
+                                            <span class="material-symbols-outlined text-sm font-bold">bedtime</span>
+                                        </div>
+                                        <p class="text-slate-600 font-bold text-lg leading-tight group-hover/item:text-primary-blue transition-colors">Personalized Sleep Hygiene Strategies</p>
+                                    </li>
+                                    <li class="flex items-start gap-5 group/item">
+                                        <div class="mt-1 w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center text-primary-blue shrink-0 group-hover/item:bg-primary-blue group-hover/item:text-white transition-all duration-300">
+                                            <span class="material-symbols-outlined text-sm font-bold">diversity_3</span>
+                                        </div>
+                                        <p class="text-slate-600 font-bold text-lg leading-tight group-hover/item:text-primary-blue transition-colors">Empowered Family-Centered Approach</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Decorative Shapes -->
+                        <div class="absolute -top-6 -right-6 w-12 h-12 bg-yellow-200/40 rounded-full blur-xl animate-pulse"></div>
+                        <div class="absolute -bottom-10 -left-10 w-24 h-24 bg-pink-200/30 rounded-full blur-2xl"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Feature Grid -->
+        <section class="py-24 bg-slate-50 relative border-y border-slate-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-20" data-reveal="up">
+                    <h2 class="text-4xl md:text-5xl font-bold text-clinic-navy font-headline mb-6">Key Guidance <span class="text-primary-blue">Domains</span></h2>
+                    <p class="text-lg text-slate-600 font-medium">Comprehensive support across all childhood developmental stages.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Cardio -->
+                    <div class="bg-white p-10 rounded-[2.5rem] shadow-premium border border-slate-100 hover:-translate-y-2 transition-all duration-500 group" data-reveal="up">
+                        <div class="w-16 h-16 bg-soft-blue-bg rounded-2xl flex items-center justify-center text-primary-blue mb-8 group-hover:scale-110 group-hover:bg-primary-blue group-hover:text-white transition-all duration-500">
+                            <span class="material-symbols-outlined text-4xl">restaurant_menu</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-clinic-navy font-headline mb-4">Feeding & Nutrition</h3>
+                        <p class="text-slate-500 leading-relaxed font-bold text-xs uppercase tracking-wider mb-6">Expert advice on breastfeeding, introduction to solids, and managing picky eaters for optimal growth.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-2 text-sm text-slate-600 font-bold uppercase tracking-widest">
+                                <span class="material-symbols-outlined text-primary-blue text-lg">check_circle</span>
+                                Feeding Regimes
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-slate-600 font-bold uppercase tracking-widest">
+                                <span class="material-symbols-outlined text-primary-blue text-lg">check_circle</span>
+                                Nutritional Plans
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Respiratory -->
+                    <div class="bg-white p-10 rounded-[2.5rem] shadow-premium border border-slate-100 hover:-translate-y-2 transition-all duration-500 group" data-reveal="up" style="transition-delay: 0.1s">
+                        <div class="w-16 h-16 bg-soft-pink-bg rounded-2xl flex items-center justify-center text-accent-pink mb-8 group-hover:scale-110 group-hover:bg-accent-pink group-hover:text-white transition-all duration-500">
+                            <span class="material-symbols-outlined text-4xl">bedtime</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-clinic-navy font-headline mb-4">Sleep Guidance</h3>
+                        <p class="text-slate-500 leading-relaxed font-bold text-xs uppercase tracking-wider mb-6">Actionable strategies for healthy sleep habits and managing common childhood sleep disturbances.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-2 text-sm text-slate-600 font-bold uppercase tracking-widest">
+                                <span class="material-symbols-outlined text-accent-pink text-lg">check_circle</span>
+                                Sleep Hygiene
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-slate-600 font-bold uppercase tracking-widest">
+                                <span class="material-symbols-outlined text-accent-pink text-lg">check_circle</span>
+                                Routine Building
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Neurology -->
+                    <div class="bg-white p-10 rounded-[2.5rem] shadow-premium border border-slate-100 hover:-translate-y-2 transition-all duration-500 group" data-reveal="up" style="transition-delay: 0.2s">
+                        <div class="w-16 h-16 bg-soft-blue-bg rounded-2xl flex items-center justify-center text-primary-blue mb-8 group-hover:scale-110 group-hover:bg-primary-blue group-hover:text-white transition-all duration-500">
+                            <span class="material-symbols-outlined text-4xl">psychology_alt</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-clinic-navy font-headline mb-4">Behavioral Support</h3>
+                        <p class="text-slate-500 leading-relaxed font-bold text-xs uppercase tracking-wider mb-6">Empathetic management of toddler tantrums, social anxiety, and positive reinforcement strategies.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-2 text-sm text-slate-600 font-bold uppercase tracking-widest">
+                                <span class="material-symbols-outlined text-primary-blue text-lg">check_circle</span>
+                                Positive Discipline
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-slate-600 font-bold uppercase tracking-widest">
+                                <span class="material-symbols-outlined text-primary-blue text-lg">check_circle</span>
+                                Emotional IQ
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Follow-up -->
+                    <div class="bg-white p-10 rounded-[2.5rem] shadow-premium border border-slate-100 hover:-translate-y-2 transition-all duration-500 group" data-reveal="up" style="transition-delay: 0.3s">
+                        <div class="w-16 h-16 bg-soft-pink-bg rounded-2xl flex items-center justify-center text-accent-pink mb-8 group-hover:scale-110 group-hover:bg-accent-pink group-hover:text-white transition-all duration-500">
+                            <span class="material-symbols-outlined text-4xl">groups</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-clinic-navy font-headline mb-4">Adolescent Care</h3>
+                        <p class="text-slate-500 leading-relaxed font-bold text-xs uppercase tracking-wider mb-6">Parenting guidance through critical adolescent transitions, focusing on mental health and independence.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-2 text-sm text-slate-600 font-bold uppercase tracking-widest">
+                                <span class="material-symbols-outlined text-accent-pink text-lg">check_circle</span>
+                                Psychosocial Support
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-slate-600 font-bold uppercase tracking-widest">
+                                <span class="material-symbols-outlined text-accent-pink text-lg">check_circle</span>
+                                Health Counseling
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: FAQ -->
+        <section class="py-24 bg-white relative overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row gap-16">
+                    <div class="lg:w-1/3" data-reveal="left">
+                        <div class="inline-flex items-center gap-3 bg-soft-blue-bg px-4 py-2 rounded-full border border-primary-blue/10 mb-6">
+                            <span class="material-symbols-outlined text-primary-blue text-sm">help_outline</span>
+                            <span class="text-[10px] font-bold text-primary-blue uppercase tracking-widest">Guidance FAQ</span>
+                        </div>
+                        <h2 class="text-4xl font-bold text-clinic-navy font-headline mb-6">Parenting <span class="text-primary-blue">Questions</span></h2>
+                        <p class="text-slate-600 mb-8 font-medium">Common queries parents have about counseling and behavioral guidance.</p>
+                        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+                            <p class="text-clinic-navy font-bold mb-4 uppercase tracking-widest text-xs">Need specific advice?</p>
+                            <a href="contact.html" class="inline-flex items-center gap-2 text-primary-blue font-bold hover:gap-4 transition-all uppercase tracking-widest text-xs">
+                                Talk to Dr. Pradeep
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-2/3 space-y-4" data-reveal="right">
+                        <details class="group bg-slate-50 rounded-[2rem] border border-slate-100 p-2 transition-all duration-300 open:bg-white open:shadow-premium" open>
+                            <summary class="list-none flex items-center justify-between p-6 cursor-pointer group-hover:text-primary-blue transition-colors">
+                                <span class="text-lg font-bold text-clinic-navy">What does a parental guidance session involve?</span>
+                                <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary-blue shadow-sm group-open:rotate-180 transition-transform">
+                                    <span class="material-symbols-outlined">expand_more</span>
+                                </div>
+                            </summary>
+                            <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-100 mt-2">
+                                A session typically involves discussing specific concerns about your child's behavior, development, or routines. We provide evidence-based medical advice and practical, workable strategies tailored to your family's daily life.
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-50 rounded-[2rem] border border-slate-100 p-2 transition-all duration-300 open:bg-white open:shadow-premium">
+                            <summary class="list-none flex items-center justify-between p-6 cursor-pointer group-hover:text-primary-blue transition-colors">
+                                <span class="text-lg font-bold text-clinic-navy">Can you help with picky eating and nutritional issues?</span>
+                                <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary-blue shadow-sm group-open:rotate-180 transition-transform">
+                                    <span class="material-symbols-outlined">expand_more</span>
+                                </div>
+                            </summary>
+                            <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-100 mt-2">
+                                Yes, we offer specialized nutritional counseling. We address age-appropriate nutrition and provide practical tips for managing picky eaters, ensuring your child receives a balanced diet for growth and development.
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-50 rounded-[2rem] border border-slate-100 p-2 transition-all duration-300 open:bg-white open:shadow-premium">
+                            <summary class="list-none flex items-center justify-between p-6 cursor-pointer group-hover:text-primary-blue transition-colors">
+                                <span class="text-lg font-bold text-clinic-navy">At what age can we start behavioral counseling for our child?</span>
+                                <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary-blue shadow-sm group-open:rotate-180 transition-transform">
+                                    <span class="material-symbols-outlined">expand_more</span>
+                                </div>
+                            </summary>
+                            <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-100 mt-2">
+                                Behavioral guidance can start as early as the toddler years (around 18-24 months) when parents often face challenges like tantrums or social withdrawal. Early guidance helps establish positive discipline patterns.
+                            </div>
+                        </details>
+
+                        <details class="group bg-slate-50 rounded-[2rem] border border-slate-100 p-2 transition-all duration-300 open:bg-white open:shadow-premium">
+                            <summary class="list-none flex items-center justify-between p-6 cursor-pointer group-hover:text-primary-blue transition-colors">
+                                <span class="text-lg font-bold text-clinic-navy">Do you provide adolescent mental health support?</span>
+                                <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary-blue shadow-sm group-open:rotate-180 transition-transform">
+                                    <span class="material-symbols-outlined">expand_more</span>
+                                </div>
+                            </summary>
+                            <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-100 mt-2">
+                                Yes, we provide psychosocial support for adolescents, addressing the unique mental health, independence, and social challenges faced during this critical transition phase.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-24 bg-clinic-navy relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-primary-blue rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2"></div>
+                <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-accent-pink rounded-full blur-[120px] translate-x-1/2 translate-y-1/2"></div>
+            </div>
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <h2 class="text-4xl md:text-6xl font-bold text-white font-headline mb-8 leading-tight">Expert Parenting <br><span class="text-primary-blue">Support & Guidance</span></h2>
+                <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto font-medium uppercase tracking-[0.2em] text-sm">Empathetic and professional guidance for every parenting concern.</p>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="contact.html" class="bg-primary-blue text-white px-10 py-5 rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-primary-blue transition-all shadow-xl shadow-primary-blue/20">Book Your Session</a>
+                    <a href="tel:08046971142" class="bg-white text-clinic-navy px-10 py-5 rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-primary-blue hover:text-white transition-all">Call 08046971142</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Premium Footer -->
+    <footer class="bg-clinic-navy text-white pt-24 pb-16 px-8 relative overflow-hidden border-t border-white/5">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-16 mb-16">
+                <!-- Branding -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-premium transform -rotate-3">
+                            <img src="clinic-mascot-logo.jpg" alt="Logo" class="h-10 w-10 object-contain">
+                        </div>
+                        <div>
+                            <span class="text-2xl font-bold font-headline leading-none block text-white">Dr. Pradeep</span>
+                            <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-primary-blue/80">Children's Clinic</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-6 font-medium">
+                        Compassionate, child-centered pediatric and neonatal care backed by 16+ years of international clinical excellence.
+                    </p>
+
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h4 class="text-primary-blue uppercase tracking-[0.2em] font-bold text-sm mb-6">Quick Access</h4>
+                    <ul class="space-y-5">
+                        <li><a href="index.html" class="text-lg text-slate-300 hover:text-white hover:translate-x-2 inline-block transition-all">Home</a></li>
+                        <li><a href="about.html" class="text-lg text-slate-300 hover:text-white hover:translate-x-2 inline-block transition-all">Meet the Doctor</a></li>
+                        <li><a href="services.html" class="text-lg text-slate-300 hover:text-white hover:translate-x-2 inline-block transition-all text-white font-bold">Clinical Services</a></li>
+                        <li><a href="gallery.html" class="text-lg text-slate-300 hover:text-white hover:translate-x-2 inline-block transition-all">Clinic Gallery</a></li>
+                        <li><a href="contact.html" class="text-lg text-slate-300 hover:text-white hover:translate-x-2 inline-block transition-all">Book Appointment</a></li>
+                    </ul>
+                </div>
+
+                <!-- Clinic Location -->
+                <div class="lg:col-span-2">
+                    <h4 class="text-primary-blue uppercase tracking-[0.2em] font-bold text-sm mb-6">Clinic Location</h4>
+                    <div class="bg-white/5 rounded-[2rem] p-8 border border-white/10 backdrop-blur-sm">
+                        <div class="flex flex-col md:flex-row gap-10">
+                            <div class="flex-grow">
+                                <h5 class="font-bold text-xl mb-4 text-white">Visit Our Sanctuary</h5>
+                                <p class="text-slate-400 font-medium mb-6 leading-relaxed">
+                                    #38, 1st A main Road, Above I planet,<br>
+                                    Yelahanka Satellite town, Yelahanka New Town,<br>
+                                    Bengaluru - 560064
+                                </p>
+                                <a href="https://share.google/sWrcJBqr1XBPVmuWk" target="_blank" class="inline-flex items-center gap-2 text-primary-blue font-bold hover:gap-4 transition-all uppercase tracking-widest text-[10px]">
+                                    Get Directions
+                                    <span class="material-symbols-outlined text-sm">directions</span>
+                                </a>
+                            </div>
+                            <div class="shrink-0">
+                                <div class="w-full md:w-40 h-40 rounded-[2rem] bg-white/5 flex flex-col items-center justify-center text-center p-4 border border-white/10 group hover:border-primary-blue/50 transition-colors">
+                                    <span class="material-symbols-outlined text-primary-blue text-4xl mb-1 group-hover:scale-110 transition-transform">call</span>
+                                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3">Call Now</span>
+                                    <div class="space-y-2">
+                                        <a href="tel:9187606838" class="text-xs font-bold text-white hover:text-primary-blue flex items-center justify-center gap-2 transition-all">
+                                            <span class="material-symbols-outlined text-sm">phone_iphone</span>
+                                            9187606838
+                                        </a>
+                                        <a href="tel:08046971142" class="text-xs font-bold text-white hover:text-primary-blue flex items-center justify-center gap-2 transition-all">
+                                            <span class="material-symbols-outlined text-sm">call</span>
+                                            08046971142
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+                <p class="text-slate-500 font-bold text-xs uppercase tracking-widest">
+                    &copy; 2024 Dr. Pradeep Children's Clinic. Professional Pediatric Healthcare.
+                </p>
+                <div class="flex gap-10">
+                    <a href="privacy-policy.html" class="text-xs text-slate-500 font-bold uppercase tracking-widest hover:text-primary transition-colors">Privacy Policy</a>
+                    <a href="terms-and-conditions.html" class="text-xs text-slate-500 font-bold uppercase tracking-widest hover:text-primary transition-colors">Terms & Conditions</a>
+                    <a href="https://wa.me/919945379333" target="_blank" class="text-xs text-slate-500 font-bold uppercase tracking-widest hover:text-primary transition-colors">Developed by ROI Infotech</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Standardized Floating Action Buttons -->
+    <div class="floating-container">
+        <a href="https://wa.me/9187606838" target="_blank" class="floating-btn btn-whatsapp" title="WhatsApp Us">
+            <span class="material-symbols-outlined">chat</span>
+        </a>
+        <button class="floating-btn btn-call" title="Call Clinic">
+            <span class="material-symbols-outlined">call</span>
+        </button>
+        <button id="scrollTopBtn" class="floating-btn btn-scroll-top" title="Scroll to Top">
+            <span class="material-symbols-outlined">arrow_upward</span>
+        </button>
+    </div>
+    <script src="floating-buttons.js?v=1.1"></script>
+</body>
+</html>

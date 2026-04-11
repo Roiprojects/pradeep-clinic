@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Dr. Pradeep Clinic</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container": "#e5e8ec",
+              "background": "#f5f7fa",
+              "tertiary-container": "#8bfaa6",
+              "surface-container-high": "#dfe3e7",
+              "on-primary-container": "#002443",
+              "tertiary-fixed-dim": "#7deb99",
+              "on-primary-fixed": "#000000",
+              "on-surface-variant": "#595c5e",
+              "primary": "#005ea1",
+              "on-secondary-container": "#4f5254",
+              "on-secondary-fixed": "#3c4042",
+              "surface": "#f5f7fa",
+              "secondary-fixed": "#e0e3e5",
+              "error-container": "#fb5151",
+              "surface-tint": "#005ea1",
+              "primary-fixed-dim": "#3997ef",
+              "on-background": "#2c2f32",
+              "tertiary-fixed": "#8bfaa6",
+              "surface-container-highest": "#d9dde1",
+              "primary-fixed": "#4ba4fd",
+              "surface-dim": "#d0d5d9",
+              "inverse-primary": "#449ff8",
+              "on-primary-fixed-variant": "#002d52",
+              "primary-container": "#4ba4fd",
+              "on-tertiary-fixed": "#004a21",
+              "on-secondary-fixed-variant": "#595c5e",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed-variant": "#006a33",
+              "tertiary": "#006a33",
+              "surface-variant": "#d9dde1",
+              "inverse-surface": "#0b0f11",
+              "on-secondary": "#f1f3f5",
+              "tertiary-dim": "#005c2b",
+              "secondary": "#595c5e",
+              "on-surface": "#2c2f32",
+              "on-error-container": "#570008",
+              "surface-container-low": "#eef1f4",
+              "outline-variant": "#abadb0",
+              "on-primary": "#edf3ff",
+              "primary-dim": "#00528d",
+              "secondary-dim": "#4d5052",
+              "secondary-fixed-dim": "#d2d5d7",
+              "secondary-container": "#e0e3e5",
+              "outline": "#74777a",
+              "error-dim": "#9f0519",
+              "on-tertiary": "#cdffd3",
+              "on-tertiary-container": "#005f2d",
+              "surface-bright": "#f5f7fa",
+              "inverse-on-surface": "#9a9da0",
+              "on-error": "#ffefee",
+              "error": "#b31b25"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .cloud-bg {
+            background-image: radial-gradient(circle at 20% 30%, rgba(75, 164, 253, 0.05) 0%, transparent 40%),
+                              radial-gradient(circle at 80% 70%, rgba(139, 250, 166, 0.08) 0%, transparent 40%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between max-w-7xl mx-auto bg-white/80 dark:bg-slate-900/80 backdrop-blur-md rounded-full mt-4 mx-4 md:mx-8 px-6 py-3 shadow-[0_12px_32px_rgba(0,94,161,0.06)]">
+<div class="flex items-center gap-2">
+<span class="text-2xl font-bold tracking-tight text-blue-800 dark:text-blue-200 font-headline">Dr. Pradeep Clinic</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-plus-jakarta-sans text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Home</a>
+<a class="font-plus-jakarta-sans text-sm font-medium text-blue-600 dark:text-blue-400 font-bold border-b-2 border-blue-600" href="#">Services</a>
+<a class="font-plus-jakarta-sans text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Specialists</a>
+<a class="font-plus-jakarta-sans text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Health Trackers</a>
+<a class="font-plus-jakarta-sans text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Patient Portal</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-fixed-dim text-on-primary px-6 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg transition-all active:scale-95">
+            Book Appointment
+        </button>
+</nav>
+<main class="pt-32 pb-24 overflow-hidden">
+<!-- Hero Section: Nurturing Atelier Aesthetic -->
+<header class="max-w-7xl mx-auto px-8 mb-20 relative">
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl"></div>
+<div class="absolute top-0 right-0 w-64 h-64 bg-tertiary-container/10 rounded-full blur-3xl"></div>
+<div class="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto">
+<span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-container/20 text-primary font-semibold text-xs tracking-wider uppercase mb-6">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                    Excellence in Pediatrics
+                </span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface mb-8 leading-[1.1]">
+                    Nurturing <span class="text-primary italic font-medium">every step</span> of their growth.
+                </h1>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                    We combine clinical precision with the warmth of a second home. Explore our specialized pediatric and neonatal care designed to give your little ones the strongest start in life.
+                </p>
+</div>
+</header>
+<!-- Services Grid: Bento Layout -->
+<section class="max-w-7xl mx-auto px-8 relative">
+<!-- Decorative Cloud Shapes -->
+<div class="absolute -right-20 top-40 opacity-40 hidden lg:block">
+<div class="w-80 h-40 bg-surface-container-low rounded-full blur-2xl transform rotate-12"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Pediatric Consultation -->
+<div class="group relative p-8 bg-surface-container-lowest rounded-xl shadow-[0_12px_32px_rgba(0,94,161,0.06)] hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-blue-50/50 rounded-bl-[100%] transition-transform group-hover:scale-110"></div>
+<div class="relative">
+<div class="w-14 h-14 bg-primary-container/20 rounded-lg flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl" data-icon="stethoscope">stethoscope</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Pediatric Consultation</h3>
+<p class="text-on-surface-variant mb-8 line-clamp-3">Comprehensive health evaluations for children of all ages, focusing on preventive care and holistic wellness.</p>
+</div>
+<button class="flex items-center gap-2 text-primary font-bold group/btn">
+                        Learn More 
+                        <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<!-- Neonatal Care (Large/Prominent) -->
+<div class="group relative p-8 bg-surface-container-low rounded-xl md:col-span-2 lg:col-span-1 shadow-[0_12px_32px_rgba(0,94,161,0.04)] hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+<div class="relative">
+<div class="w-14 h-14 bg-tertiary-container/30 rounded-lg flex items-center justify-center text-tertiary mb-6">
+<span class="material-symbols-outlined text-3xl" data-icon="child_care">child_care</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Neonatal Care</h3>
+<p class="text-on-surface-variant mb-8">Specialized attention for newborns and premature babies. Our neonatal wing is equipped with cutting-edge technology and tender expertise.</p>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="bg-surface-container-lowest p-3 rounded-lg text-xs font-medium text-on-surface-variant flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> 24/7 Monitoring
+                        </div>
+<div class="bg-surface-container-lowest p-3 rounded-lg text-xs font-medium text-on-surface-variant flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Expert Nursing
+                        </div>
+</div>
+<button class="flex items-center gap-2 text-tertiary font-bold group/btn">
+                        Learn More 
+                        <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<!-- Vaccination -->
+<div class="group relative p-8 bg-surface-container-lowest rounded-xl shadow-[0_12px_32px_rgba(0,94,161,0.06)] hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative">
+<div class="w-14 h-14 bg-red-100/40 rounded-lg flex items-center justify-center text-red-500 mb-6">
+<span class="material-symbols-outlined text-3xl" data-icon="vaccines">vaccines</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Vaccination</h3>
+<p class="text-on-surface-variant mb-8">Timely vaccination schedules managed through digital reminders to keep your child protected against preventable diseases.</p>
+</div>
+<button class="flex items-center gap-2 text-primary font-bold group/btn">
+                        Learn More 
+                        <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<!-- Growth & Development -->
+<div class="group relative p-8 bg-surface-container-low rounded-xl shadow-[0_12px_32px_rgba(0,94,161,0.04)] hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+<div class="relative">
+<div class="w-14 h-14 bg-yellow-100/40 rounded-lg flex items-center justify-center text-yellow-700 mb-6">
+<span class="material-symbols-outlined text-3xl" data-icon="trending_up">trending_up</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Growth &amp; Development</h3>
+<p class="text-on-surface-variant mb-8">Detailed tracking of physical and cognitive milestones with expert guidance for every developmental stage.</p>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden mb-8">
+<div class="w-3/4 h-full bg-primary rounded-full"></div>
+</div>
+<button class="flex items-center gap-2 text-primary font-bold group/btn">
+                        Learn More 
+                        <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<!-- Child Nutrition -->
+<div class="group relative p-8 bg-surface-container-lowest rounded-xl shadow-[0_12px_32px_rgba(0,94,161,0.06)] hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative">
+<div class="w-14 h-14 bg-green-100/40 rounded-lg flex items-center justify-center text-green-700 mb-6">
+<span class="material-symbols-outlined text-3xl" data-icon="nutrition">nutrition</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Child Nutrition</h3>
+<p class="text-on-surface-variant mb-8">Customized meal planning and nutritional counseling to address fussy eating, obesity, or dietary deficiencies.</p>
+</div>
+<button class="flex items-center gap-2 text-primary font-bold group/btn">
+                        Learn More 
+                        <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<!-- Fever & Infections -->
+<div class="group relative p-8 bg-surface-container-low rounded-xl shadow-[0_12px_32px_rgba(0,94,161,0.04)] hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+<div class="relative">
+<div class="w-14 h-14 bg-purple-100/40 rounded-lg flex items-center justify-center text-purple-700 mb-6">
+<span class="material-symbols-outlined text-3xl" data-icon="thermometer">thermometer</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Fever &amp; Infections</h3>
+<p class="text-on-surface-variant mb-8">Rapid diagnosis and treatment for common childhood infections, respiratory issues, and acute illness management.</p>
+</div>
+<button class="flex items-center gap-2 text-primary font-bold group/btn">
+                        Learn More 
+                        <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Safety Assurance / Soft CTA Section -->
+<section class="max-w-7xl mx-auto px-8 mt-32">
+<div class="bg-primary/5 rounded-xl p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center gap-12">
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="md:w-1/2 relative z-10">
+<h2 class="font-headline text-4xl font-bold mb-6 text-on-surface">Your child's health is our <span class="text-primary">primary commitment.</span></h2>
+<p class="text-on-surface-variant text-lg mb-8">We follow international safety protocols and provide a stress-free environment for children. Every consultation is an opportunity to learn and grow together.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold shadow-md hover:shadow-xl transition-all">Book Online</button>
+<button class="bg-primary-container/20 text-primary px-8 py-3 rounded-full font-bold hover:bg-primary-container/30 transition-all">Call Clinic</button>
+</div>
+</div>
+<div class="md:w-1/2 relative">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface shadow-2xl relative">
+<img alt="Pediatrician caring for baby" class="w-full h-full object-cover" data-alt="a kind pediatrician in a soft blue coat smiling while checking a healthy infant in a warm sunlit modern clinic setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHtVyj9QH0sseaAs0jiS0iFzvFfTjxo9CX791b-KGchaY4kji4a6h04HLtJNM12KjsDxw__7ztc5SnrpfeLbY0FJpJowo-ruw0A45R7WlyPGsiEdTkMBtr_5wNNIa1-FooteyDS3gDL1afojcs19XeVCh2EdoCP9DQ0zMCdsdve3tZN_Wn4fJHLE_L1ZLhjztvRnxEfXrxu2Hchv5Q7h572o_Q3ytQKKVYd5_6hyBjN2UuzHDY7ostnIqVhxOqj1Ck534J8m2Uqnfn"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+</div>
+<!-- Floating Badge -->
+<div class="absolute -top-6 -left-6 bg-white p-4 rounded-lg shadow-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-secondary">Certified</p>
+<p class="text-sm font-bold">Neonatal Expert</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full flex flex-col items-center gap-8 px-8 relative pt-24 pb-12 bg-slate-50 dark:bg-slate-950">
+<div class="absolute top-0 left-0 right-0 h-24 bg-surface" style="clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);"></div>
+<div class="max-w-7xl w-full flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="max-w-xs">
+<span class="text-xl font-bold text-blue-800 dark:text-blue-200 font-headline mb-4 block">Dr. Pradeep Clinic</span>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm leading-relaxed">
+                    © 2024 Dr. Pradeep Pediatric Clinic. Nurturing every step of growth.
+                </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-8">
+<div class="flex flex-col gap-4">
+<p class="font-bold text-on-surface text-sm uppercase tracking-wider">Quick Links</p>
+<a class="text-slate-500 dark:text-slate-400 font-inter text-sm hover:text-blue-400 transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 font-inter text-sm hover:text-blue-400 transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-bold text-on-surface text-sm uppercase tracking-wider">Support</p>
+<a class="text-blue-700 dark:text-blue-300 font-inter text-sm underline hover:text-blue-400 transition-all opacity-80 hover:opacity-100" href="#">Emergency Contacts</a>
+<a class="text-slate-500 dark:text-slate-400 font-inter text-sm hover:text-blue-400 transition-all opacity-80 hover:opacity-100" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-bold text-on-surface text-sm uppercase tracking-wider">Clinic Hours</p>
+<p class="text-slate-500 font-inter text-sm">Mon - Sat: 9AM - 8PM</p>
+<p class="text-slate-500 font-inter text-sm">Sun: 10AM - 2PM</p>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-bold text-on-surface text-sm uppercase tracking-wider">Follow Us</p>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-sm">mail</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full h-px bg-slate-200 dark:bg-slate-800 mt-8"></div>
+<div class="text-center text-slate-400 text-xs py-4">
+            Designed with love for the little ones. All rights reserved.
+        </div>
+</footer>
+
+    <!-- Standardized Floating Action Buttons -->
+    <div class='floating-container'>
+        <a href='https://wa.me/9187606838' target='_blank' class='floating-btn btn-whatsapp' title='WhatsApp Us'>
+            <span class='material-symbols-outlined'>chat</span>
+        </a>
+        <button class='floating-btn btn-call' title='Call Clinic'>
+            <span class='material-symbols-outlined'>call</span>
+        </button>
+        <button id='scrollTopBtn' class='floating-btn btn-scroll-top' title='Scroll to Top'>
+            <span class='material-symbols-outlined'>arrow_upward</span>
+        </button>
+    </div>
+    <script src='../floating-buttons.js?v=1.1'></script>
+</body></html>
+

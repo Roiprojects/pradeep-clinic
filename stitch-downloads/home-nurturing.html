@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr. Pradeep Clinic | Pediatric Excellence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container": "#e5e8ec",
+              "background": "#f5f7fa",
+              "tertiary-container": "#8bfaa6",
+              "surface-container-high": "#dfe3e7",
+              "on-primary-container": "#002443",
+              "tertiary-fixed-dim": "#7deb99",
+              "on-primary-fixed": "#000000",
+              "on-surface-variant": "#595c5e",
+              "primary": "#005ea1",
+              "on-secondary-container": "#4f5254",
+              "on-secondary-fixed": "#3c4042",
+              "surface": "#f5f7fa",
+              "secondary-fixed": "#e0e3e5",
+              "error-container": "#fb5151",
+              "surface-tint": "#005ea1",
+              "primary-fixed-dim": "#3997ef",
+              "on-background": "#2c2f32",
+              "tertiary-fixed": "#8bfaa6",
+              "surface-container-highest": "#d9dde1",
+              "primary-fixed": "#4ba4fd",
+              "surface-dim": "#d0d5d9",
+              "inverse-primary": "#449ff8",
+              "on-primary-fixed-variant": "#002d52",
+              "primary-container": "#4ba4fd",
+              "on-tertiary-fixed": "#004a21",
+              "on-secondary-fixed-variant": "#595c5e",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed-variant": "#006a33",
+              "tertiary": "#006a33",
+              "surface-variant": "#d9dde1",
+              "inverse-surface": "#0b0f11",
+              "on-secondary": "#f1f3f5",
+              "tertiary-dim": "#005c2b",
+              "secondary": "#595c5e",
+              "on-surface": "#2c2f32",
+              "on-error-container": "#570008",
+              "surface-container-low": "#eef1f4",
+              "outline-variant": "#abadb0",
+              "on-primary": "#edf3ff",
+              "primary-dim": "#00528d",
+              "secondary-dim": "#4d5052",
+              "secondary-fixed-dim": "#d2d5d7",
+              "secondary-container": "#e0e3e5",
+              "outline": "#74777a",
+              "error-dim": "#9f0519",
+              "on-tertiary": "#cdffd3",
+              "on-tertiary-container": "#005f2d",
+              "surface-bright": "#f5f7fa",
+              "inverse-on-surface": "#9a9da0",
+              "on-error": "#ffefee",
+              "error": "#b31b25"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-sky-lavender-gradient {
+            background: linear-gradient(180deg, #e0f2fe 0%, #f3e8ff 100%);
+        }
+        .cloud-shape {
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        }
+        .hero-mask {
+            clip-path: ellipse(100% 85% at 50% 15%);
+        }
+    </style>
+</head>
+<body class="font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between max-w-7xl mx-auto rounded-full mt-4 mx-4 md:mx-8 px-6 py-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-[0_12px_32px_rgba(0,94,161,0.06)]">
+<div class="flex items-center gap-2">
+<span class="text-2xl font-bold tracking-tight text-blue-800 dark:text-blue-200 font-headline">Dr. Pradeep Clinic</span>
+</div>
+<div class="hidden md:flex items-center gap-8 font-plus-jakarta-sans text-sm font-medium">
+<a class="text-blue-600 dark:text-blue-400 font-bold border-b-2 border-blue-600 hover:text-blue-500 transition-colors" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Specialists</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Health Trackers</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Patient Portal</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-fixed-dim text-on-primary px-5 py-2.5 rounded-full font-semibold text-sm hover:scale-95 duration-200 transition-all">
+            Book Appointment
+        </button>
+</nav>
+<main class="relative bg-sky-lavender-gradient overflow-hidden">
+<!-- Animated Cloud Elements & Illustrations Background -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden">
+<!-- Koala on branch -->
+<div class="absolute top-40 left-10 w-32 h-32 opacity-80 md:opacity-100">
+<img class="w-full" data-alt="cute playful koala illustration hanging from a soft green tree branch with big friendly eyes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAisZBzOj_BcFiLx4-IqqVvx_ZvF4PCmxf8FedjI731o7-5rv7H0LaOD3eBIFslNE3da6hNUNhxLUFE7mACqlSlvVhbRgvk-ggFjcCFgGdJNyHL3fuug2LxzHiOhWf7e8CItiZb_y4LltCfUakcaRYILTFUGHXLUkvKhYB7738lXrsw0rlxicQMeviF5LzG9x_4SSKvQ2ym1G-BXcgsDCorHED64iHtMsBInVjMJ7IMYWE1Kt7g6jX8JFAc_LgPkVrlvggy-yTtIZXK"/>
+</div>
+<!-- Syringes friendly -->
+<div class="absolute top-1/4 right-20 w-24 h-24 rotate-12 opacity-40">
+<img class="w-full" data-alt="playful pediatric syringe illustration with a smiley face and soft rounded edges in pastel colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEtuP9F6i-sn3hE-dyU4dbtJriyTIrUe08rUmgcrmIFF0ten4jQvNEMxGrZZb5Go5QJaKrTcgR_1YCoYV3rCAPTvZZAosPcx0BiQJWpMjqKHER014q3tJBzHqDpuqN7NrX0whlmLj-du6SBU6_ga6cBA9mOcnoUmsICFPLq-YEVfpevnUJSQFn1DWRkCRaY6ZJimJUjzd8YiozuCILjditHaql5hwFba5jBGmwETN0pUF1ote28dfhPi8-6FEYyZev34QPAl2notAS"/>
+</div>
+<!-- Stars -->
+<div class="absolute top-20 right-1/4 w-8 h-8 text-yellow-400">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="absolute top-60 left-1/3 w-6 h-6 text-yellow-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-60 px-6 md:px-12 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 z-10">
+<div class="inline-flex items-center gap-2 bg-white/40 backdrop-blur-sm border border-white/20 px-4 py-1.5 rounded-full mb-6">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant font-label">Trusted Pediatric Excellence</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.1] mb-8">
+                    Compassionate <span class="text-primary">Pediatric Care</span> for Your Child
+                </h1>
+<p class="text-lg md:text-xl text-secondary mb-10 max-w-lg leading-relaxed">
+                    Nurturing the health and happiness of your little ones with expert medical care in a playful, stress-free environment.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-to-br from-primary to-primary-fixed-dim text-on-primary px-8 py-4 rounded-full font-bold text-lg shadow-xl shadow-primary/20 hover:scale-105 transition-transform">
+                        Schedule a Visit
+                    </button>
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-fixed-dim transition-colors">
+                        Our Services
+                    </button>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative">
+<!-- Main Hero Image Asymmetric Layout -->
+<div class="relative z-10 rounded-xl overflow-hidden shadow-2xl rotate-2">
+<img class="w-full aspect-[4/5] object-cover" data-alt="smiling male pediatrician wearing a stethoscope interacting playfully with a young happy family and their child in a bright room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6-mB4Ml5oVGHvRHPkMDU_uvJ6kgjaMLevr1d1Jucj8LGOjtXGBW4uxJBFV5GZlxUkl9dUjEuMpCB_c6MnrKJhRXpbefBR5FQaaaYtBOl05-ctfHbjFIn4ReAz_qrZt9DkBNMHu18NxXkQv2PkTDKCnuSjvKahcZzmLHdI_-RqKubqWvhJFifk_sTXaHWS40E03X7yL1y-8g_sDYIsr-SUKI5aKcM7-TOuAaSI7L4OVcDJ6SAriBO2uTTlNyHtZsdqYmyjGHRyppjd"/>
+</div>
+<!-- Heart Stethoscope Illustration overlay -->
+<div class="absolute -bottom-10 -left-10 z-20 w-48 h-48">
+<img class="w-full" data-alt="cute illustration of a stethoscope shaped into a heart with children smiling inside the heart" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWbaCIccJOfm7pbnkeyBjB8u5V5UA3RH6B6lmN_5sDYZbWxkc657etQEpQk_DGH5l8RErjnTniWlDS9LHxN4wbWaAbFj40QUx8G8MJ9u_nstZhlCTtB3Lt_x7zzA_KMKUkmmCgdFCOy97US8OOn8F-13csOpzwDkW4Fu0gtNUGypWHWP0sZ1ZjZAZVlpYYodx3QrH10DIVxAvItd8J0QHcJk462NisEkHPbNAMnGH1_P8Q3y7dKTUJ0rSaqvzXuIJffN5NawihNr-A"/>
+</div>
+<!-- Decorative Circle -->
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-tertiary-container/30 rounded-full blur-3xl -z-10"></div>
+</div>
+</section>
+<!-- Layered Cloud Footer Effect for Transition -->
+<div class="absolute bottom-0 left-0 right-0 pointer-events-none">
+<div class="h-32 bg-white cloud-shape w-[120%] -translate-x-[10%] shadow-[0_-20px_50px_rgba(255,255,255,0.8)] opacity-60"></div>
+<div class="h-48 bg-white cloud-shape w-[110%] -translate-x-[5%] -mt-16 shadow-[0_-20px_50px_rgba(255,255,255,0.9)] opacity-80"></div>
+<div class="h-40 bg-white cloud-shape w-full -mt-24"></div>
+</div>
+</main>
+<!-- Our Services Section -->
+<section class="bg-white py-32 px-6 md:px-12 relative overflow-hidden">
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="text-center mb-20">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-on-surface mb-4">Our Services</h2>
+<div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="group bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-lowest transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-6 text-on-primary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">medical_services</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">General Checkups</h3>
+<p class="text-secondary leading-relaxed mb-6">Routine wellness exams focused on tracking growth, nutrition, and early detection of developmental milestones.</p>
+<a class="text-primary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 2 -->
+<div class="group bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-lowest transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5">
+<div class="w-16 h-16 bg-tertiary-container rounded-full flex items-center justify-center mb-6 text-on-tertiary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">vaccines</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">Vaccinations</h3>
+<p class="text-secondary leading-relaxed mb-6">Safe and scheduled vaccination programs following global health standards to keep your children protected.</p>
+<a class="text-primary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 3 -->
+<div class="group bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-lowest transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5">
+<div class="w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center mb-6 text-on-secondary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">psychology_alt</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">Child Psychology</h3>
+<p class="text-secondary leading-relaxed mb-6">Supportive behavioral and emotional guidance for children navigating growth hurdles and developmental phases.</p>
+<a class="text-primary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Locations Section -->
+<section class="bg-surface-container-low py-32 px-6 md:px-12">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+<div class="w-full lg:w-1/2">
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-8">Our Locations</h2>
+<p class="text-lg text-secondary mb-12">Conveniently located clinic centers designed with kid-friendly environments and the latest medical technology.</p>
+<div class="space-y-6">
+<div class="bg-surface-container-lowest p-6 rounded-lg flex items-start gap-4">
+<div class="bg-primary/10 p-3 rounded-full text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">Downtown Pediatric Center</h4>
+<p class="text-secondary">123 Wellness Blvd, Medical District</p>
+<p class="text-primary text-sm font-semibold mt-2">Open: 8:00 AM - 6:00 PM</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-lg flex items-start gap-4">
+<div class="bg-primary/10 p-3 rounded-full text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">The Suburban Hub</h4>
+<p class="text-secondary">456 Park Avenue, Greenfield Estates</p>
+<p class="text-primary text-sm font-semibold mt-2">Open: 9:00 AM - 7:00 PM</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 h-[400px] rounded-xl overflow-hidden relative shadow-xl">
+<img class="w-full h-full object-cover" data-alt="clean minimal digital map showing medical center icons in a suburban neighborhood area" data-location="Mumbai, India" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwbd5FoV86bESMLSXLgP5VEuKr4vosk9St6PHkZPMin14lODUlr4VyTK3bIKdcY04SfXDv_e-f_LDmxrTqt6AkHsE7BbDQImWJv0DZM8O0ZkQ51HdXWcyYq_4gn9uPlsn-Ow9l1iYXgz-N_DoICnR201qx0z0U8stFLcorwYnTHGu82rJpMz5a6nqTx52LbhNcPWz6tFRt5aKTnVfu-9JuyeqZ8-nXuRJ2oG2Nd1FRCFYC1o57hoT66qvT-N1a6Xt1v78Sdsl3omwG"/>
+<!-- Playful map pin illustration -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 pointer-events-none">
+<img class="w-full" data-alt="playful colorful map pin illustration with a smiling cartoon face and vibrant secondary colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpDvgRD81uehModTUmR9JlF6qXm6SW93DPwBABFSkV_hI0TWYf4t22LyS8JGAWSf7PqeIWQCMjZiTq8B_4bgYIEX7IrtYBKlRMmuG6oQ3JvdiPyuk9GN9kBsJoC_xu8beAg4DL7V17O5zF1dmmI7nOMGfeHa9ClLPn28DAFz6C3NR_E02nspifA2HJxqlAB8QRCvxR6Q94foHSJveDBcfLntaaa4rVgCN19GTB-wYsFOLcz5Kk2mzbbmSVYcpXurCPRlJ1kWll3xd5"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Trusted by Parents (Testimonials) -->
+<section class="bg-white py-32 px-6 md:px-12 overflow-hidden">
+<div class="max-w-7xl mx-auto text-center mb-16">
+<h2 class="font-headline text-4xl font-bold mb-4">Trusted by Parents</h2>
+<p class="text-secondary">Join thousands of families who trust Dr. Pradeep for their children's care.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-8 max-w-7xl mx-auto">
+<div class="bg-surface-container-low p-10 rounded-xl flex-1 relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-6 right-6">format_quote</span>
+<div class="flex items-center gap-4 mb-6">
+<img class="w-14 h-14 rounded-full object-cover" data-alt="headshot of a smiling young mother with a friendly expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE2YuxkqlUtilErfcgbrPCLjaKjt90Ix_jH8W5MakaURqpftuqKMFhK5i1X2ZnP2lqtSxKJ2hG-pwuszq8jpg-K4sXG3PoMH242Ljz14s00Ucx-2AT4Xi1CdQhiSGOQ7P9EZfdx7C34Eyf3E2QIP0UWS-CAHB0mJusCFT8wLXaeR_pMCQk30WlL3mRZvN8nK6VWkNt_jGxSEF8snbYJtTOImCgbSmaBaNddYsZH4582Hyvr0RdsH270UlNZ-10treCxsOSD2Avxnmf"/>
+<div>
+<h4 class="font-bold">Sarah Jenkins</h4>
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<p class="text-on-surface-variant italic leading-relaxed">"Dr. Pradeep and his staff are amazing! My daughter used to be terrified of doctor visits, but now she actually asks when we're going back. The playful environment makes a huge difference."</p>
+</div>
+<div class="bg-primary/5 p-10 rounded-xl flex-1 relative border border-primary/10">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-6 right-6">format_quote</span>
+<div class="flex items-center gap-4 mb-6">
+<img class="w-14 h-14 rounded-full object-cover" data-alt="portrait of a confident father smiling warmly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_S8civzASXNloiauVZm5SLpKErLk91K2kcHdfKPn-YFtoQi0X8PIcJIO1ckSwhL1TZzAAhf-wi8vkH5QHE2I7YodaYxE3a0TehUnTlk0yL08O3xwvAmbn3_BLMIz1ktYOd1nE5ta1TiKK3Vhq8xYTLOq8J7Cbc7hlQwbgfALX0F73-0g0ey-4Az5oR1Sft6oUw9mZyg9r0gJfdYmRm9Jb0rkeTXlBz-9M5UISJ7RFImiMRypqsXzkUgDStLeUkk8FHzZHfMNkquKm"/>
+<div>
+<h4 class="font-bold">David Chen</h4>
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<p class="text-on-surface-variant italic leading-relaxed">"We appreciate the detailed explanations and the patience shown during our visits. It's rare to find such high-level clinical expertise combined with genuine warmth."</p>
+</div>
+</div>
+</section>
+<!-- Book Your Visit Today Section -->
+<section class="bg-sky-lavender-gradient py-32 px-6 md:px-12 relative overflow-hidden">
+<!-- Floating Stars Decoration -->
+<div class="absolute top-10 left-10 text-yellow-400 opacity-30"><span class="material-symbols-outlined text-4xl">grade</span></div>
+<div class="absolute bottom-10 right-10 text-primary opacity-30 rotate-45"><span class="material-symbols-outlined text-5xl">auto_awesome</span></div>
+<div class="max-w-4xl mx-auto bg-white/90 backdrop-blur-xl p-8 md:p-16 rounded-xl shadow-2xl relative z-10">
+<div class="text-center mb-12">
+<h2 class="font-headline text-4xl font-bold text-primary mb-4">Book Your Visit Today</h2>
+<p class="text-secondary">Take the first step towards your child's healthy future. Easy, fast, and secure booking.</p>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2 font-label">Parent's Full Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-sm px-4 py-3 focus:ring-2 focus:ring-primary/20 transition-all outline-none" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2 font-label">Child's Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-sm px-4 py-3 focus:ring-2 focus:ring-primary/20 transition-all outline-none" placeholder="Jane Doe" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2 font-label">Preferred Date</label>
+<input class="w-full bg-surface-container-low border-none rounded-sm px-4 py-3 focus:ring-2 focus:ring-primary/20 transition-all outline-none" type="date"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2 font-label">Message (Optional)</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-sm px-4 py-3 focus:ring-2 focus:ring-primary/20 transition-all outline-none" placeholder="Any specific concerns?" rows="3"></textarea>
+</div>
+<button class="w-full bg-gradient-to-r from-primary to-primary-fixed-dim text-white font-bold text-lg py-4 rounded-full shadow-lg shadow-primary/30 hover:scale-[1.02] active:scale-95 transition-all" type="submit">
+                    Confirm Appointment
+                </button>
+</form>
+</div>
+<!-- More Clouds Transition to Footer -->
+<div class="absolute bottom-0 left-0 right-0 h-24 bg-slate-50 cloud-shape translate-y-12"></div>
+</section>
+<!-- Footer -->
+<footer class="relative pt-24 pb-12 w-full flex flex-col items-center gap-8 px-8 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col items-center text-center gap-6">
+<span class="text-xl font-bold text-blue-800 dark:text-blue-200 font-headline">Dr. Pradeep Clinic</span>
+<div class="flex flex-wrap justify-center gap-6 font-inter text-sm font-medium">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-400 transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-400 transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-400 transition-all opacity-80 hover:opacity-100" href="#">Emergency Contacts</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-400 transition-all opacity-80 hover:opacity-100" href="#">Careers</a>
+</div>
+<div class="flex gap-4 mt-2">
+<a class="w-10 h-10 bg-white shadow-sm flex items-center justify-center rounded-full text-primary hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="w-10 h-10 bg-white shadow-sm flex items-center justify-center rounded-full text-primary hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-inter">© 2024 Dr. Pradeep Pediatric Clinic. Nurturing every step of growth.</p>
+</footer>
+
+    <!-- Standardized Floating Action Buttons -->
+    <div class='floating-container'>
+        <a href='https://wa.me/9187606838' target='_blank' class='floating-btn btn-whatsapp' title='WhatsApp Us'>
+            <span class='material-symbols-outlined'>chat</span>
+        </a>
+        <button class='floating-btn btn-call' title='Call Clinic'>
+            <span class='material-symbols-outlined'>call</span>
+        </button>
+        <button id='scrollTopBtn' class='floating-btn btn-scroll-top' title='Scroll to Top'>
+            <span class='material-symbols-outlined'>arrow_upward</span>
+        </button>
+    </div>
+    <script src='../floating-buttons.js?v=1.1'></script>
+</body></html>
+
