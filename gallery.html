@@ -4,12 +4,13 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Clinic Gallery | Dr. Pradeep Children's Clinic</title>
+    <link rel="icon" type="image/jpeg" href="assets/images/clinic-mascot-logo.jpg">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=DM+Serif+Display:ital@0;1&amp;family=Outfit:wght@400;500;600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="floating-buttons.css"/>
-    <link rel="stylesheet" href="global.css"/>
-    <script src="scroll-reveal.js" defer></script>
+    <link rel="stylesheet" href="assets/css/floating-buttons.css"/>
+    <link rel="stylesheet" href="assets/css/global.css"/>
+    <script src="assets/js/scroll-reveal.js" defer></script>
     <script id="tailwind-config">
           tailwind.config = {
             darkMode: "class",
@@ -61,7 +62,7 @@
     <nav id="navbar" class="fixed top-4 inset-x-2 md:inset-x-8 z-50 flex items-center justify-between max-w-7xl mx-auto rounded-[2rem] px-4 md:px-6 py-2.5 md:py-3 premium-nav transition-all duration-300">
         <a href="index.html" class="flex items-center gap-2 md:gap-3 group shrink-0">
             <div class="w-10 h-10 md:w-12 md:h-12 bg-white rounded-xl md:rounded-2xl flex items-center justify-center shadow-premium rotate-[-3deg] group-hover:rotate-0 transition-transform duration-500 overflow-hidden shrink-0">
-                <img src="clinic-mascot-logo.jpg" alt="Logo" class="h-8 w-8 md:h-10 md:w-10 object-contain">
+                <img src="assets/images/clinic-mascot-logo.jpg" alt="Logo" class="h-8 w-8 md:h-10 md:w-10 object-contain">
             </div>
             <div class="flex flex-col">
                 <span class="text-lg md:text-2xl font-bold font-headline tracking-tighter text-clinic-navy block leading-none">Dr. Pradeep</span>
@@ -155,7 +156,7 @@
     <main class="pt-24 min-h-screen bg-slate-50/50">
         <!-- Gallery Hero Section -->
         <header class="inner-page-hero relative pt-36 pb-24 px-6 overflow-hidden">
-            <div class="inner-hero-bg bg-cover bg-center absolute inset-0 transition-transform duration-[2s] hover:scale-105" style="background-image: url('real-consultation-desk.jpg');"></div>
+            <div class="inner-hero-bg bg-cover bg-center absolute inset-0 transition-transform duration-[2s] hover:scale-105" style="background-image: url('assets/images/real-consultation-desk.jpg');"></div>
             <div class="inner-hero-overlay"></div>
             
             <div class="max-w-4xl mx-auto text-center relative z-10 inner-hero-content">
@@ -179,25 +180,25 @@
                     <!-- Column 1 -->
                     <div class="space-y-8 flex flex-col">
                         <div class="relative group rounded-[2.5rem] overflow-hidden border-4 border-white shadow-premium transition-all duration-500 hover:-translate-y-2 h-[500px]">
-                            <img src="real-reception.jpg" alt="Reception Desk" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="assets/images/real-reception.jpg" alt="Reception Desk" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-primary-blue/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                                 <span class="text-white font-bold text-lg uppercase tracking-widest font-headline">Reception & Welcome</span>
                             </div>
                         </div>
                         <div class="relative group rounded-[2.5rem] overflow-hidden border-4 border-white shadow-premium transition-all duration-500 hover:-translate-y-2 h-[350px]">
-                            <img src="real-waiting-1.jpg" alt="Waiting Area" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="assets/images/real-waiting-1.jpg" alt="Waiting Area" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-accent-pink/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                                 <span class="text-white font-bold text-lg uppercase tracking-widest font-headline">Waiting Lounge</span>
                             </div>
                         </div>
                         <div class="relative group rounded-[2.5rem] overflow-hidden border-4 border-white shadow-premium transition-all duration-500 hover:-translate-y-2 h-[450px]">
-                            <img src="real-exterior-night.jpg" alt="Clinic Exterior Night View" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="assets/images/real-exterior-night.jpg" alt="Clinic Exterior Night View" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-primary-blue/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                                 <span class="text-white font-bold text-lg uppercase tracking-widest font-headline">Clinic Exterior</span>
                             </div>
                         </div>
                         <div class="relative group rounded-[2.5rem] overflow-hidden border-4 border-white shadow-premium transition-all duration-500 hover:-translate-y-2 h-[350px]">
-                            <img src="real-waiting-2.jpg" alt="Pharmacy and Reception" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="assets/images/real-waiting-2.jpg" alt="Pharmacy and Reception" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-primary-blue/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                                 <span class="text-white font-bold text-lg uppercase tracking-widest font-headline">Pharmacy & Reception</span>
                             </div>
@@ -207,7 +208,7 @@
                     <!-- Column 2 -->
                     <div class="flex flex-col gap-8">
                         <div class=" relative group rounded-[2.5rem] overflow-hidden border-4 border-white shadow-premium transition-all duration-500 hover:-translate-y-2 h-[650px]">
-                            <img src="real-tree-feature.jpg" alt="Playful Tree Feature" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="assets/images/real-tree-feature.jpg" alt="Playful Tree Feature" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-primary-blue/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                                 <span class="text-white font-bold text-lg uppercase tracking-widest font-headline">Playful Feature</span>
                             </div>
@@ -219,13 +220,13 @@
                             <p class="text-slate-600 font-bold font-headline leading-tight">"A space designed for comfort and curiosity."</p>
                         </div>
                         <div class="relative group rounded-[2.5rem] overflow-hidden border-4 border-white shadow-premium transition-all duration-500 hover:-translate-y-2 h-[500px]">
-                            <img src="real-doctor-cabin.jpg" alt="Doctor Consultation Cabin" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="assets/images/real-doctor-cabin.jpg" alt="Doctor Consultation Cabin" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-primary-blue/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                                 <span class="text-white font-bold text-lg uppercase tracking-widest font-headline">Doctor's Cabin</span>
                             </div>
                         </div>
                         <div class="relative group rounded-[2.5rem] overflow-hidden border-4 border-white shadow-premium transition-all duration-500 hover:-translate-y-2 h-[400px]">
-                            <img src="real-waiting-room-3.jpg" alt="Waiting Area Gallery" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="assets/images/real-waiting-room-3.jpg" alt="Waiting Area Gallery" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-accent-pink/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                                 <span class="text-white font-bold text-lg uppercase tracking-widest font-headline">Patient Lounge</span>
                             </div>
@@ -235,25 +236,25 @@
                     <!-- Column 3 -->
                     <div class="space-y-8 flex flex-col">
                         <div class=" relative group rounded-[2.5rem] overflow-hidden border-4 border-white shadow-premium transition-all duration-500 hover:-translate-y-2 h-[400px]">
-                            <img src="real-clinic-sign.jpg" alt="Clinic Entrance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="assets/images/real-clinic-sign.jpg" alt="Clinic Entrance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-accent-pink/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                                 <span class="text-white font-bold text-lg uppercase tracking-widest font-headline">Main Entrance</span>
                             </div>
                         </div>
                         <div class=" relative group rounded-[2.5rem] overflow-hidden border-4 border-white shadow-premium transition-all duration-500 hover:-translate-y-2 h-[450px]">
-                            <img src="real-hallway.jpg" alt="Mural Hallway" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="assets/images/real-hallway.jpg" alt="Mural Hallway" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-primary-blue/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                                 <span class="text-white font-bold text-lg uppercase tracking-widest font-headline">Mural Hallway</span>
                             </div>
                         </div>
                         <div class="relative group rounded-[2.5rem] overflow-hidden border-4 border-white shadow-premium transition-all duration-500 hover:-translate-y-2 h-[500px]">
-                            <img src="real-consultation-bed.jpg" alt="Examination Area" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="assets/images/real-consultation-bed.jpg" alt="Examination Area" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-accent-pink/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                                 <span class="text-white font-bold text-lg uppercase tracking-widest font-headline">Examination Area</span>
                             </div>
                         </div>
                         <div class="relative group rounded-[2.5rem] overflow-hidden border-4 border-white shadow-premium transition-all duration-500 hover:-translate-y-2 h-[350px]">
-                            <img src="real-consultation-desk.jpg" alt="Consultation Desk" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="assets/images/real-consultation-desk.jpg" alt="Consultation Desk" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-primary-blue/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                                 <span class="text-white font-bold text-lg uppercase tracking-widest font-headline">Consultation Desk</span>
                             </div>
@@ -291,7 +292,7 @@
                 <div class="lg:col-span-1">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-premium transform -rotate-3">
-                            <img src="clinic-mascot-logo.jpg" alt="Logo" class="h-10 w-10 object-contain">
+                            <img src="assets/images/clinic-mascot-logo.jpg" alt="Logo" class="h-10 w-10 object-contain">
                         </div>
                         <div>
                             <span class="text-2xl font-bold font-headline leading-none block text-white">Dr. Pradeep</span>
@@ -379,6 +380,6 @@
             <span class="material-symbols-outlined">arrow_upward</span>
         </button>
     </div>
-    <script src="floating-buttons.js?v=1.1"></script>
+    <script src="assets/js/floating-buttons.js?v=1.1"></script>
 </body>
 </html>
