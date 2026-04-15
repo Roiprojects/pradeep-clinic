@@ -424,7 +424,15 @@
                     <!-- Inner padding frame -->
                     <div class="p-3 md:p-5">
                         <div class="relative w-full rounded-[1rem] md:rounded-[2rem] overflow-hidden" style="padding-bottom: 56.25%;">
-                            <div id="about-video-player" class="absolute w-full h-full" style="top: -60px; left: 0; height: calc(100% + 120px);"></div>
+                            <iframe id="about-video-player" 
+                                class="absolute w-full h-full" 
+                                style="top: -60px; left: 0; height: calc(100% + 120px);"
+                                src="https://www.youtube.com/embed/1pyHKLMPvD8?si=SEwYwTMnYLAMAh19&enablejsapi=1&autoplay=1&mute=1&loop=1&playlist=1pyHKLMPvD8&controls=0&modestbranding=1&rel=0&iv_load_policy=3&disablekb=1&playsinline=1"
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen></iframe>
 
                             <!-- Mute/Unmute Toggle Button -->
                             <button id="about-sound-toggle" onclick="toggleAboutVideoSound()" 
@@ -872,22 +880,6 @@
 
         function onYouTubeIframeAPIReady() {
             aboutPlayer = new YT.Player('about-video-player', {
-                videoId: '1pyHKLMPvD8',
-                playerVars: {
-                    autoplay: 1,
-                    mute: 1,
-                    controls: 0,
-                    modestbranding: 1,
-                    rel: 0,
-                    showinfo: 0,
-                    iv_load_policy: 3,
-                    disablekb: 1,
-                    enablejsapi: 1,
-                    origin: window.location.origin,
-                    loop: 1,
-                    playlist: '1pyHKLMPvD8',
-                    playsinline: 1
-                },
                 events: {
                     'onReady': function(event) {
                         event.target.playVideo();
