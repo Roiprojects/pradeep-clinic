@@ -1721,7 +1721,7 @@
         </div>
 
         <div class="flex items-center gap-2 md:gap-3">
-            <a href="contact.html"
+            <a href="https://book-appointment.healthplix.com/dr-pradeep-paediatrician-karnataka-bangalore"
                 class="bg-primary text-white !px-3 !py-2 md:!px-5 md:!py-2.5 !text-[10px] md:!text-sm rounded-full font-bold hover:bg-clinic-navy duration-200 transition-all shadow-md shrink-0">
                 Book Now
             </a>
@@ -1852,7 +1852,7 @@
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-stretch sm:items-center">
-                        <a href="contact.html"
+                        <a href="https://book-appointment.healthplix.com/dr-pradeep-paediatrician-karnataka-bangalore"
                             class="btn-premium-primary px-8 py-4 md:px-10 md:py-5 rounded-2xl shadow-[0_20px_40px_-15px_rgba(30,136,229,0.5)] hover:shadow-[0_20px_40px_-10px_rgba(30,136,229,0.7)] group text-center hover:-translate-y-1 transition-all duration-300">
                             <span
                                 class="material-symbols-outlined group-hover:rotate-12 transition-transform">event_available</span>
@@ -2117,6 +2117,58 @@
         </section>
 
 
+        <!-- Visit the Clinic Section -->
+        <section id="visit-clinic" class="py-16 md:py-24 px-6 relative overflow-hidden" style="background: linear-gradient(180deg, #ffffff 0%, #f0f7ff 50%, #fdf2f8 100%);">
+            <!-- Subtle Background Decorations -->
+            <div class="absolute top-10 right-10 text-primary opacity-10 pointer-events-none">
+                <span class="material-symbols-outlined text-[100px]">videocam</span>
+            </div>
+            <div class="absolute bottom-10 left-10 text-pink-300 opacity-10 pointer-events-none">
+                <span class="material-symbols-outlined text-[80px]">play_circle</span>
+            </div>
+
+            <div class="max-w-5xl mx-auto relative z-10">
+                <!-- Section Header -->
+                <div class="text-center mb-10 md:mb-14">
+                    <div class="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm px-5 py-2 rounded-full border border-blue-50 mb-4 shadow-sm">
+                        <span class="w-2 h-2 bg-primary rounded-full"></span>
+                        <span class="text-[11px] font-bold text-primary uppercase tracking-[0.3em] font-headline">How We Care for You</span>
+                    </div>
+                    <h2 class="font-headline text-3xl md:text-4xl lg:text-5xl font-bold text-clinic-navy mb-4 leading-tight">
+                        How We <span class="text-primary-blue">Care</span>
+                    </h2>
+                    <p class="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto font-medium leading-relaxed">
+                        Step inside our warm, child-friendly clinic designed for comfort and care.<br class="hidden md:block">
+                        Every visit is a reassuring experience for both parents and little ones.
+                    </p>
+                </div>
+
+                <!-- Video Container -->
+                <div class="relative group">
+                    <!-- Decorative Glow Behind Video -->
+                    <div class="absolute -inset-4 md:-inset-6 bg-gradient-to-br from-primary-blue/10 to-accent-pink/10 rounded-[2.5rem] md:rounded-[3rem] blur-2xl opacity-60 group-hover:opacity-80 transition-opacity duration-700"></div>
+
+                    <!-- Video Wrapper -->
+                    <div class="relative bg-white rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-[0_20px_60px_rgba(30,136,229,0.12)] border border-white/80 transition-all duration-500 group-hover:shadow-[0_30px_80px_rgba(30,136,229,0.18)]">
+                        <!-- Inner padding frame -->
+                        <div class="p-3 md:p-5">
+                            <div class="relative w-full rounded-[1rem] md:rounded-[2rem] overflow-hidden" style="padding-bottom: 56.25%;">
+                                <div id="clinic-video-player" class="absolute w-full h-full" style="top: -60px; left: 0; height: calc(100% + 120px);"></div>
+
+                                <!-- Mute/Unmute Toggle Button -->
+                                <button id="video-sound-toggle" onclick="toggleVideoSound()" 
+                                    class="absolute bottom-4 right-4 z-30 w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/90 backdrop-blur-md border border-slate-200 shadow-lg flex items-center justify-center text-slate-600 hover:bg-primary-blue hover:text-white hover:border-primary-blue hover:shadow-xl transition-all duration-300 cursor-pointer"
+                                    title="Unmute video">
+                                    <span id="sound-icon" class="material-symbols-outlined text-2xl">volume_off</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Why Choose Us & CTA Section -->
         <section id="why-choose-us" class="bg-white section-padding relative overflow-hidden">
             <!-- Subtle background decorative elements -->
@@ -2243,7 +2295,7 @@
                             </p>
 
                             <div class="flex flex-col gap-4 w-full max-w-[280px] mx-auto z-10">
-                                <a href="contact.html"
+                                <a href="https://book-appointment.healthplix.com/dr-pradeep-paediatrician-karnataka-bangalore"
                                     class="flex items-center justify-center bg-primary-blue text-white font-semibold text-[16px] border border-primary-blue rounded-[16px] shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 min-h-[54px] w-full px-6">
                                     Book Appointment
                                 </a>
@@ -2996,6 +3048,63 @@
                     }
                 }
             });
+        </script>
+
+        <!-- YouTube IFrame API for Video Sound Control -->
+        <script>
+            var clinicPlayer;
+            var isVideoMuted = true;
+
+            // Load YouTube IFrame API
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            function onYouTubeIframeAPIReady() {
+                clinicPlayer = new YT.Player('clinic-video-player', {
+                    videoId: '1pyHKLMPvD8',
+                    playerVars: {
+                        autoplay: 1,
+                        mute: 1,
+                        controls: 0,
+                        modestbranding: 1,
+                        rel: 0,
+                        showinfo: 0,
+                        iv_load_policy: 3,
+                        disablekb: 1,
+                        loop: 1,
+                        playlist: '1pyHKLMPvD8',
+                        playsinline: 1
+                    },
+                    events: {
+                        'onReady': function(event) {
+                            event.target.playVideo();
+                        }
+                    }
+                });
+            }
+
+            function toggleVideoSound() {
+                if (!clinicPlayer) return;
+                var icon = document.getElementById('sound-icon');
+                var btn = document.getElementById('video-sound-toggle');
+                if (isVideoMuted) {
+                    clinicPlayer.unMute();
+                    clinicPlayer.setVolume(100);
+                    icon.textContent = 'volume_up';
+                    btn.title = 'Mute video';
+                    btn.classList.add('bg-primary-blue', 'text-white', 'border-primary-blue');
+                    btn.classList.remove('bg-white/90', 'text-slate-600', 'border-slate-200');
+                } else {
+                    clinicPlayer.mute();
+                    icon.textContent = 'volume_off';
+                    btn.title = 'Unmute video';
+                    btn.classList.remove('bg-primary-blue', 'text-white', 'border-primary-blue');
+                    btn.classList.add('bg-white/90', 'text-slate-600', 'border-slate-200');
+                }
+                isVideoMuted = !isVideoMuted;
+            }
         </script>
 </body>
 
